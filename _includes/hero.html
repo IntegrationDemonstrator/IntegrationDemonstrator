@@ -1,0 +1,47 @@
+<section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
+    <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
+        <div class="container">
+
+            <div class="columns">
+                {% if page.side_logo %}
+                <div class="column is-one-fifth has-text-centered">
+                    <img src={{page.side_logo}}>
+                </div>
+                {% endif %}
+                <div class="column">
+                    <h1 class="title is-2">{{ page.title }}</h1>
+                     <p class="subtitle is-3" style="text-align: left">{{ page.subtitle }}</p>
+                </div>
+            </div>
+            {% if page.hero_link %}
+                <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
+            {% endif %}
+            {% comment %}
+            {% if page.left_link or  page.right_link %}
+                <div class="columns is-mobile">
+                    <div class="column">
+                        {% if page.left_link %}
+                            <div class="buttons">
+                                <a class="button" href="{{ page.left_link | relative_url }}">
+                                    <span class="icon"><i class="fas fa-arrow-left"></i></span>
+                                    <span>{{ page.left_link_name }}</span>
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="column is-right">
+                        {% if page.right_link %}
+                            <div class="buttons is-right">
+                                <a class="button" href="{{ page.right_link | relative_url }}">
+                                    <span>{{ page.right_link_name }}</span>
+                                    <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+            {% endcomment %}
+        </div>
+    </div>
+</section>

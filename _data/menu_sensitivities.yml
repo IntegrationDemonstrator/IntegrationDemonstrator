@@ -1,0 +1,22 @@
+- label:
+  items:
+  - name: Overview
+    link: /simulations
+    icon: fa-key
+- label: Sensitivities
+  items:
+    - name: High Renewable
+      link: /simulations/high_renewable/
+      icon: fa-solar-panel
+    - name: Farther Offshore Wind
+      link: /simulations/offshore_far/
+      icon: fa-water
+    - name: CO&#8322; Budget
+      link: /simulations/carbon_budget/
+      icon: fa-receipt
+    - name: H&#8322; Import Cost
+      link: /simulations/h2_import/
+      icon: fa-funnel-dollar
+    - name: CO&#8322; Export Capacity
+      link: /simulations/carbon_export/
+      icon: fa-cash-register

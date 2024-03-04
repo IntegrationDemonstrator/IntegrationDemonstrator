@@ -1,0 +1,12 @@
+- title: Second Image Gallery Title
+  images:
+    - link: /img/uliege_logo.png
+      alt: The alt text for the image
+      description:
+    - link: https://via.placeholder.com/800x450
+      alt: The alt text for the image
+      description: The image description
+    - link: https://via.placeholder.com/800x450
+      alt: The alt text for the image
+      description: |-
+        The *image* **description**

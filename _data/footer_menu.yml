@@ -1,0 +1,16 @@
+- name: Home
+  link: /
+- name: Methodology
+  link: /methodology/
+- name: System
+  link: /system/
+- name: Base Case
+  link: /simulations/base_case/
+- name: Sensitivities
+  link: /simulation/
+- name: Interactive&nbsp;Results
+  link: /simulations/base_case/
+- name: How to Navigate
+  link: /navigate/
+- name: About
+  link: /about/

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/website_test/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/website_test/favicon3.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link href=" https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Sensitivities | INTEGRATION</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Sensitivities" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<meta property="og:description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<link rel="canonical" href="http://localhost:4000/website_test/simulation/" />
+<meta property="og:url" content="http://localhost:4000/website_test/simulation/" />
+<meta property="og:site_name" content="INTEGRATION" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Sensitivities" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites","headline":"Sensitivities","url":"http://localhost:4000/website_test/simulation/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/website_test/" class="navbar-item">
+                <img src="/website_test/favicon2.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                
+                
+                    
+                        
+                        <a href="/website_test/methodology/" class="navbar-item ">Methodology</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/system/" class="navbar-item ">System</a>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulations/base_case/" class="navbar-link ">Base Case</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulations/base_case/" class="navbar-item ">Key Results</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_balance/" class="navbar-item ">Energy Balances</a>
+                                
+                                <a href="/website_test/simulations/base_case/capacities/" class="navbar-item ">Capacities</a>
+                                
+                                <a href="/website_test/simulations/base_case/carbon_balance/" class="navbar-item ">CO&#8322; Balance</a>
+                                
+                                <a href="/website_test/simulations/base_case/cost_of_energy_system/" class="navbar-item ">Cost Overview</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_storage/" class="navbar-item ">Energy Storage</a>
+                                
+                                <a href="/website_test/simulations/base_case/marginal_cost_of_commodities/" class="navbar-item ">Marginal Costs</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulation/" class="navbar-link is-active">Sensitivities</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulation/" class="navbar-item is-active">Overview</a>
+                                
+                                <a href="/website_test/simulations/high_renewable/" class="navbar-item ">High Renewable</a>
+                                
+                                <a href="/website_test/simulations/offshore_far/" class="navbar-item ">Farther Offshore Wind</a>
+                                
+                                <a href="/website_test/simulations/carbon_budget/" class="navbar-item ">CO&#8322; Budget</a>
+                                
+                                <a href="/website_test/simulations/h2_import/" class="navbar-item ">H&#8322; Import Cost</a>
+                                
+                                <a href="/website_test/simulations/carbon_export/" class="navbar-item ">CO&#8322; Export Capacity</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/simulations/all_simulations/" class="navbar-item ">Interactive Results</a>
+                        
+                    
+                
+                    
+                
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                        <a href="/website_test/navigate/" class="navbar-item ">How to Navigate</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/about/" class="navbar-item ">About</a>
+                        
+                    
+                
+                
+
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-small  is-bold is-primary"  style="background: url('../img/wind.jpg') no-repeat center center; background-size: cover;" >
+    <div class="hero-body ">
+        <div class="container">
+
+            <div class="columns">
+                
+                <div class="column">
+                    <h1 class="title is-2">Sensitivities</h1>
+                     <p class="subtitle is-3" style="text-align: left">Overview</p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+    
+
+    <div class="content">
+        <p><p>Before diving futher you should have a look at the <a href="../simulations/base_case">Base Case</a>. Sensitivities are carried out by changing some parameters of the Base Case and analysing how the optimal energy system is changing. In order to analyse the impact of a single parameter, simulations are carried out with several values of that parameter to detect when changes take place, e.g. production and conversion capacity, load factor of conversion facilities, import flows… Here is an overview of the different scenarios considered and their analysis.</p>
+</p>
+    </div>
+
+    
+        <section class="showcase">
+            <div class="columns is-centered ">
+                <p class="title"> <b>High Renewable</b>
+            </div>
+            <figure class="image  is-16 ">
+                <img src="/website_test/img/highrenewable.png" />
+            </figure>
+            <div class="showcase-content">
+                <div class="columns is-centered">
+                    <div class="column is-8-desktop is-12-tablet">
+                        <p class="subtitle">Belgian system with a potential of 103.3 GW of solar PV, 20.5 GW of onshore wind and 9.3 GW of offshore wind</p>
+
+                        
+                        
+                        <div class="content">
+                            <p><p>The potential of solar PV, onshore and offshore wind is increased in order to test how much variable renewable energy sources can be integrated into the Belgian energy system on an optimal way. The full potential of onshore wind (9.3 GW) and offshore wind (20.5 GW) is deployed, but not the full potential of solar PV, as in the Base Case. Consequently more hydrogen is produced from offshore wind and less gas is used to produce electricity. However most hydrogen remains imported because green electricity is preferably used as electricity.</p>
+</p>
+                        </div>
+
+                        
+                        
+
+                        
+
+                        <a href="../simulations/high_renewable/" class="button is-primary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+        <section class="showcase">
+            <div class="columns is-centered ">
+                <p class="title"> <b>Farther Offshore Wind : 40 to 1000 km</b>
+            </div>
+            <figure class="image  is-16 ">
+                <img src="/website_test/img/fartheroffshore.png" />
+            </figure>
+            <div class="showcase-content">
+                <div class="columns is-centered">
+                    <div class="column is-8-desktop is-12-tablet">
+                        <p class="subtitle">Belgian system with offshore wind located 1000 km from the shore</p>
+
+                        
+                        
+                        <div class="content">
+                            <p><p>The distance of offshore wind is artificially increased to detect when it is more interesting to produce hydrogen offshore rather than transporting it as electricity. Indeed as transporting is cheaper than electricity, from a certain distance hydrogen production offshore increases but if the distance becomes too long, hydrogen from offshore wind becomes more costly than hydrogen imports.</p>
+</p>
+                        </div>
+
+                        
+                        
+
+                        
+
+                        <a href="../simulations/offshore_far/" class="button is-primary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+        <section class="showcase">
+            <div class="columns is-centered ">
+                <p class="title"> <b>CO<sub>2</sub> Budget : 0 to 20% of 1990 CO<sub>2</sub> emissions</b>
+            </div>
+            <figure class="image  is-16 ">
+                <img src="/website_test/img/co2budget.png" />
+            </figure>
+            <div class="showcase-content">
+                <div class="columns is-centered">
+                    <div class="column is-8-desktop is-12-tablet">
+                        <p class="subtitle">Belgian system with a carbon budget of 20% of the 1990 emissions</p>
+
+                        
+                        
+                        <div class="content">
+                            <p><p>The Base Case assumes a net-zero energy system by 2050. But the Belgian energy system is integrated within the European energy market and the decarbonisation cost may be different across countries. Therefore, some countries have net-positive emissions, while other have net-negative emissions in an optimal EU energy system. If some CO<sub>2</sub> emissions are allowed for Belgium in 2050, the optimal energy system in Belgium is cheaper and less CO<sub>2</sub> is captured and exported.</p>
+</p>
+                        </div>
+
+                        
+                        
+
+                        
+
+                        <a href="../simulations/carbon_budget/" class="button is-primary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+        <section class="showcase">
+            <div class="columns is-centered ">
+                <p class="title"> <b>H<sub>2</sub> Import Cost : €75 to 300/MWh</b>
+            </div>
+            <figure class="image  is-16 ">
+                <img src="/website_test/img/h2import.png" />
+            </figure>
+            <div class="showcase-content">
+                <div class="columns is-centered">
+                    <div class="column is-8-desktop is-12-tablet">
+                        <p class="subtitle">Belgian system with a higher H<sub>2</sub> import cost of €300/MWh</p>
+
+                        
+                        
+                        <div class="content">
+                            <p><p>Hydrogen can be produced in Belgium by electrolysis (green hydrogen) or using Steam Methane Reforming (SMR) or imported. The cost of importing hydrogen impacts the trade-off between imports and domestic production. If the H<sub>2</sub> import cost increases, more H<sub>2</sub> is produced in Belgium, but the limited production of green electricity forces the energy system to be balanced with hydrogen production from SMRs. This increases the need for carbon capture capacity and exports.</p>
+</p>
+                        </div>
+
+                        
+                        
+
+                        
+
+                        <a href="../simulations/h2_import/" class="button is-primary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+        <section class="showcase">
+            <div class="columns is-centered ">
+                <p class="title"> <b>CO<sub>2</sub> Export Capacity : 3.5 down to 0 kt/h</b>
+            </div>
+            <figure class="image  is-16 ">
+                <img src="/website_test/img/co2export.png" />
+            </figure>
+            <div class="showcase-content">
+                <div class="columns is-centered">
+                    <div class="column is-8-desktop is-12-tablet">
+                        <p class="subtitle">Belgian system with a CO<sub>2</sub> export capacity of 0</p>
+
+                        
+                        
+                        <div class="content">
+                            <p><p>The capacity to export CO<sub>2</sub> by pipeline strongly impacts the deployment of renewable electricity in Belgium’s net-zero energy system in 2050. When this capacity decreases, less CO<sub>2</sub> emissions is allowed, so that CCGTs are less used and more electricity is imported. In the extreme case shown above, no CO<sub>2</sub> can be exported, CCGTs are seldom used and the captured CO<sub>2</sub> is even used in methanation facilities to produced CH4 needed for final demand.</p>
+</p>
+                        </div>
+
+                        
+                        
+
+                        
+
+                        <a href="../simulations/carbon_export/" class="button is-primary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+
+
+                    
+                    
+                    
+<div class="content">
+    
+
+
+
+    
+</div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+
+        <div class="content has-text-centered">
+            <p class=""><b>INTEGRATION:</b>  Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition
+                by <a href="https://www.uliege.be/"> <br> ULiège </a> & <a href="https://www.fluxys.com/">Fluxys</a>.</p>
+            <p class=""> Funded by <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition"><b>Energy Transition Fund of the Belgian federal government</b></a></p>
+        </div>
+
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/" class="link">Home</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/methodology/" class="link">Methodology</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/system/" class="link">System</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Base Case</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulation/" class="link">Sensitivities</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Interactive&nbsp;Results</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/navigate/" class="link">How to Navigate</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/about/" class="link">About</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+
+    
+    <script src="/website_test/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/website_test/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/website_test/favicon3.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link href=" https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>System Description | INTEGRATION</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="System Description" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<meta property="og:description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<link rel="canonical" href="http://localhost:4000/website_test/system/" />
+<meta property="og:url" content="http://localhost:4000/website_test/system/" />
+<meta property="og:site_name" content="INTEGRATION" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="System Description" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites","headline":"System Description","url":"http://localhost:4000/website_test/system/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/website_test/" class="navbar-item">
+                <img src="/website_test/favicon2.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                
+                
+                    
+                        
+                        <a href="/website_test/methodology/" class="navbar-item ">Methodology</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/system/" class="navbar-item is-active">System</a>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulations/base_case/" class="navbar-link ">Base Case</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulations/base_case/" class="navbar-item ">Key Results</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_balance/" class="navbar-item ">Energy Balances</a>
+                                
+                                <a href="/website_test/simulations/base_case/capacities/" class="navbar-item ">Capacities</a>
+                                
+                                <a href="/website_test/simulations/base_case/carbon_balance/" class="navbar-item ">CO&#8322; Balance</a>
+                                
+                                <a href="/website_test/simulations/base_case/cost_of_energy_system/" class="navbar-item ">Cost Overview</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_storage/" class="navbar-item ">Energy Storage</a>
+                                
+                                <a href="/website_test/simulations/base_case/marginal_cost_of_commodities/" class="navbar-item ">Marginal Costs</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulation/" class="navbar-link ">Sensitivities</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulation/" class="navbar-item ">Overview</a>
+                                
+                                <a href="/website_test/simulations/high_renewable/" class="navbar-item ">High Renewable</a>
+                                
+                                <a href="/website_test/simulations/offshore_far/" class="navbar-item ">Farther Offshore Wind</a>
+                                
+                                <a href="/website_test/simulations/carbon_budget/" class="navbar-item ">CO&#8322; Budget</a>
+                                
+                                <a href="/website_test/simulations/h2_import/" class="navbar-item ">H&#8322; Import Cost</a>
+                                
+                                <a href="/website_test/simulations/carbon_export/" class="navbar-item ">CO&#8322; Export Capacity</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/simulations/all_simulations/" class="navbar-item ">Interactive Results</a>
+                        
+                    
+                
+                    
+                
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                        <a href="/website_test/navigate/" class="navbar-item ">How to Navigate</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/about/" class="navbar-item ">About</a>
+                        
+                    
+                
+                
+
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-small  is-bold is-primary"  style="background: url('../img/system1.jpg') no-repeat center center; background-size: cover;" >
+    <div class="hero-body ">
+        <div class="container">
+
+            <div class="columns">
+                
+                <div class="column">
+                    <h1 class="title is-2">System Description</h1>
+                     <p class="subtitle is-3" style="text-align: left"><br></p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+
+                    
+                    
+                    
+<div class="content">
+    <div x-data="{visible: true}">
+    <div class="notification is-danger" x-show.transition.duration.300ms="visible">
+        
+        <article class="media">
+            
+                <div class="media-left">
+                    <span class="icon"><i class="fas fa-exclamation-triangle fa-lg"></i></span>
+                </div>
+            
+            <div class="media-content">
+                <div class="content"><p>WEBSITE UNDER CONSTRUCTION</p>
+</div>
+            </div>
+        </article>
+    </div>
+</div>
+
+<h1 id="application-of-the-methodology-to-belgiums-energy-system">Application of the methodology to Belgium’s energy system</h1>
+
+<p><img src="../img/generic.png" alt="Three clusters" /></p>
+
+<p><strong>The main elements of the methodology for Belgium’s energy system are:</strong></p>
+
+<ul>
+  <li><strong>Three clusters are defined</strong>: INLAND (Belgium); COASTAL (coastal area); OFFSHORE (Offshore Belgian exclusive economic zone). Energy transport capacity is unlimited within the clusters, but capacity is limited or has to be built between the clusters;</li>
+  <li><strong>Energy demand</strong> for electricity, methane and hydrogen for 2050 are defined in the “Distributed Energy” scenario of the TYNDP 2022 published by <a href="../methodology/#notes">ENTSOG/ENTSO-E</a>. Energy demand is located in the INLAND cluster. Demand profiles are based on historical data;</li>
+  <li><strong>Demand-side management</strong> is implemented for electricity – load shifting, load shedding;</li>
+  <li><strong>Domestic energy production capacities</strong> can be built up to the maximum potential defined in the TYNDP 2022. Solar PV and onshore wind are in the INLAND cluster, while offshore wind is in the OFFSHORE cluster;</li>
+  <li><strong>Energy can be imported</strong>: green electricity, methane and hydrogen in the COASTAL or INLAND clusters can be imported from neighbouring countries where green electricity imports are assumed to follow the same production profile of renewable electricity in Belgium; liquid natural gas can be imported by ship in the COASTAL cluster (Zeebrugge harbour);</li>
+  <li><strong>Grids for electricity and methane</strong> are uncongested inside the clusters and actual capacities between clusters can be increased through investments;</li>
+  <li><strong>Conversion technologies</strong> –  power-to-hydrogen (electrolysis) can be built in all clusters; Fuel cells can be built in the COASTAL and INLAND clusters; methane-to-power (CCGTs, OCGTs, CHPs), Methanation and SMR can be deployed in the INLAND cluster;</li>
+  <li><strong>Storage technologies</strong> – batteries for electricity and storage tanks for hydrogen can be built in all clusters, depending on physical capabilities; linepack and underground storage for methane is only developed in the INLAND cluster;</li>
+  <li><strong>Carbon dioxide removal technologies</strong> – post-combustion carbon capture (PCCC), Direct Air Capture (DAC) – can be developed in order to achieve net-zero CO<sub>2</sub> emissions.</li>
+</ul>
+
+<p>The overall architecture of the clusters is shown hereunder. The three clusters are displayed, along with the three energy carriers – electricity, methane and hydrogen. The neighbouring countries are modelized as import nodes. The INLAND cluster can emit, capture, and export CO<sub>2</sub>, while the COASTAL cluster can only capture and export it for permanent sequestration.</p>
+
+<h1 id="detailed-topology-of-the-clusters">Detailed topology of the clusters</h1>
+
+<div class="columns">
+  <div class="column is-one-half has-text-centered">
+    <img alt="Costal" src="../img/Offshore_schematic.png" width="90%" />
+  </div>
+  <div class="column is-8">
+    <p>A schema of the <strong>OFFSHORE</strong> cluster is shown hereafter. It considers 2 energy carriers: electricity and hydrogen. One additional commodity is defined: water. There are 7 nodes</p>
+
+    <ul>
+      <li>4 conversion nodes: wind offshore, fuel cell, electrolyser, desalination;</li>
+      <li>3 flexibility nodes: electricity, water and hydrogen storage.</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column is-8">
+    <p>The <strong>COASTAL</strong> cluster is shown hereafter. It considers 3 energy carriers – electricity, hydrogen and methane. One additional commodity is defined: carbon dioxide. There are 10 nodes:</p>
+
+    <ul>
+      <li>4 conversion nodes – fuel cells, electrolyser, methanation, DAC</li>
+      <li>2 flexibility nodes – electricity and hydrogen storage</li>
+      <li>4 import nodes – methane from Norway, UK and France, synthetic methane import.</li>
+    </ul>
+  </div>
+<div class="column is-one-half has-text-centered">
+    <img title="Offshore" alt="ULiège" src="../img/Coastal_schematic.png" />
+  </div>
+</div>
+
+<p>The <strong>INLAND</strong> cluster is shown hereafter. It considers 3 energy carriers: electricity, hydrogen and methane. One additional commodity is defined: carbon dioxide.</p>
+
+<p>There are 28 nodes:</p>
+
+<ul>
+  <li>13 conversion nodes – solar PV, wind onshore, electrolyser, fuel cell, DAC, methanation, biomethane production, CCGT, OCGT, Steam Methane Reforming, 3 PCCCs</li>
+  <li>12 flexibility nodes – electricity storage, pumped hydro, methane storage, hydrogen and CO<sub>2</sub> storage, linepack (methane), load shifting and 5 kinds of load shedding</li>
+  <li>2 import nodes – methane from Germany and hydrogen from the Netherlands</li>
+  <li>1 export node for CO<sub>2</sub>.</li>
+</ul>
+
+<div class="column has-text-centered">
+    <img alt="Inland" src="../img/Inland_schematic.png" style="max-width: 900px" width="100%" />
+</div>
+
+<h1 id="units">Units</h1>
+
+<p>Energy is expressed in MWh. For hydrogen and methane, energy is expressed in low heating value (LHV).</p>
+
+<p>Power is expressed in GW. For hydrogen and methane, power is expressed in low heating value (LHV).</p>
+
+<p>Carbon capture capacity or flow rate is expressed in ktCO<sub>2</sub>/h or kt/h.</p>
+
+<p>Carbon storage is expressed in ktCO<sub>2</sub> or kt.</p>
+
+<h1 id="main-parameters">Main parameters</h1>
+
+<p>All technologies, except for natural gas storage, pumped-hydro power plants, and existing electrical lines and natural gas pipelines in Belgium would be completely replaced by 2050. The installed capacities of technologies in neighboring countries are considered constant throughout the optimization horizon. The electrical lines and natural gas pipelines connecting Belgium to its neighbours are assumed to be already established at their maximum capacities, based on future projects proposed by Elia and Fluxys. A gas pipeline connecting Belgium to the Netherlands is repurposed for hydrogen transportation.</p>
+
+<p>The parameters of all technologies related to the production, transport, conversion and storage of electricity, methane and hydrogen – maximum capacity, capex, fixed opex, variable opex, conversion factors, flexibility, efficiency – are listed and referred to in [ref. to Jocelyn paper].</p>
+
+<p>Among other parameters, the potential for renewable production in Belgium in 2050 is set according to <a href="../methodology/#notes">Elia’s Roadmap to 2050 study</a> and <a href="../methodology/#notes">Valbiom study</a>:</p>
+
+<ul>
+  <li>Solar PV: 50 GW</li>
+  <li>Onshore wind: 9 GW</li>
+  <li>Offshore wind: 8 GW</li>
+  <li>Biomethane: [12] TWh/y with flat profile</li>
+</ul>
+
+<p>Other important parameters in the Base Case that will be modified in the sensitivity analysis are:</p>
+
+<ul>
+  <li>Offshore wind distance from shore: 40 km</li>
+  <li>CO<sub>2</sub> budget for whole energy system in 2050: 0% (net-zero energy system)</li>
+  <li>Import cost of hydrogen: €75/MWh</li>
+  <li>CO<sub>2</sub> export capacity : 3.5 ktCO<sub>2</sub>/h or about 30 MtCO<sub>2</sub>/year</li>
+</ul>
+
+<p>Production profiles for sun and wind use [2009?] historical time series.</p>
+
+
+
+    
+</div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+
+        <div class="content has-text-centered">
+            <p class=""><b>INTEGRATION:</b>  Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition
+                by <a href="https://www.uliege.be/"> <br> ULiège </a> & <a href="https://www.fluxys.com/">Fluxys</a>.</p>
+            <p class=""> Funded by <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition"><b>Energy Transition Fund of the Belgian federal government</b></a></p>
+        </div>
+
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/" class="link">Home</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/methodology/" class="link">Methodology</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/system/" class="link">System</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Base Case</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulation/" class="link">Sensitivities</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Interactive&nbsp;Results</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/navigate/" class="link">How to Navigate</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/about/" class="link">About</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+
+    
+    <script src="/website_test/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>

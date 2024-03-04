@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/website_test/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/website_test/favicon3.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link href=" https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>INTEGRATION Project | INTEGRATION</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="INTEGRATION Project" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<meta property="og:description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<link rel="canonical" href="http://localhost:4000/website_test/" />
+<meta property="og:url" content="http://localhost:4000/website_test/" />
+<meta property="og:site_name" content="INTEGRATION" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="INTEGRATION Project" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites","headline":"INTEGRATION Project","name":"INTEGRATION","url":"http://localhost:4000/website_test/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/website_test/" class="navbar-item">
+                <img src="/website_test/favicon2.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                
+                
+                    
+                        
+                        <a href="/website_test/methodology/" class="navbar-item ">Methodology</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/system/" class="navbar-item ">System</a>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulations/base_case/" class="navbar-link ">Base Case</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulations/base_case/" class="navbar-item ">Key Results</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_balance/" class="navbar-item ">Energy Balances</a>
+                                
+                                <a href="/website_test/simulations/base_case/capacities/" class="navbar-item ">Capacities</a>
+                                
+                                <a href="/website_test/simulations/base_case/carbon_balance/" class="navbar-item ">CO&#8322; Balance</a>
+                                
+                                <a href="/website_test/simulations/base_case/cost_of_energy_system/" class="navbar-item ">Cost Overview</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_storage/" class="navbar-item ">Energy Storage</a>
+                                
+                                <a href="/website_test/simulations/base_case/marginal_cost_of_commodities/" class="navbar-item ">Marginal Costs</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulation/" class="navbar-link ">Sensitivities</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulation/" class="navbar-item ">Overview</a>
+                                
+                                <a href="/website_test/simulations/high_renewable/" class="navbar-item ">High Renewable</a>
+                                
+                                <a href="/website_test/simulations/offshore_far/" class="navbar-item ">Farther Offshore Wind</a>
+                                
+                                <a href="/website_test/simulations/carbon_budget/" class="navbar-item ">CO&#8322; Budget</a>
+                                
+                                <a href="/website_test/simulations/h2_import/" class="navbar-item ">H&#8322; Import Cost</a>
+                                
+                                <a href="/website_test/simulations/carbon_export/" class="navbar-item ">CO&#8322; Export Capacity</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/simulations/all_simulations/" class="navbar-item ">Interactive Results</a>
+                        
+                    
+                
+                    
+                
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                        <a href="/website_test/navigate/" class="navbar-item ">How to Navigate</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/about/" class="navbar-item ">About</a>
+                        
+                    
+                
+                
+
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-fullwidth  is-bold is-primary" >
+    <div class="hero-body ">
+        <div class="container">
+
+            <div class="columns">
+                
+                <div class="column is-one-fifth has-text-centered">
+                    <img src=integration.png>
+                </div>
+                
+                <div class="column">
+                    <h1 class="title is-2">INTEGRATION Project</h1>
+                     <p class="subtitle is-3" style="text-align: left">Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition</p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+
+                    
+                    
+                    
+<div class="content">
+    <div x-data="{visible: true}">
+    <div class="notification is-danger" x-show.transition.duration.300ms="visible">
+        
+        <article class="media">
+            
+                <div class="media-left">
+                    <span class="icon"><i class="fas fa-exclamation-triangle fa-lg"></i></span>
+                </div>
+            
+            <div class="media-content">
+                <div class="content"><p>WEBSITE UNDER CONSTRUCTION</p>
+</div>
+            </div>
+        </article>
+    </div>
+</div>
+
+<h1 id="the-project">The project</h1>
+
+<p><strong>Fluxys Belgium</strong> and <strong>ULiège</strong> have worked on the INTEGRATION project over the period 2020-2024, supported by the <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition">Energy Transition Fund of the Belgian federal government</a>.</p>
+
+<p><strong>INTEGRATION</strong> stands for “<strong>INT</strong>eraction <strong>E</strong>lectricité, <strong>G</strong>az et autres <strong>R</strong>éseaux énergétiques : modélis<strong>A</strong>tion, op<strong>T</strong>i-misation, <strong>I</strong>nvestissements et régulati<strong>ON</strong>” or “Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition” in English.</p>
+
+<p>The project aims at developing a methodology to model and optimize energy systems by 2050, taking all energy networks and demand sectors into account. The methodology focuses primarily on the interaction between gas and electricity because of the increasingly important role of gas – methane, hydrogen – to ensure security of supply in Belgium. Conversion technologies like power-to-gas and gas-to-power enable energy system integration – a dynamic interaction between electricity and gas systems enabling optimisation across energy carriers through markets.</p>
+
+<p>The methodology is used to calculate an optimal energy system with the minimal total cost – annualized investments, fixed and variable operations and maintenance costs – under constraints, e.g. reduced or net-zero CO<sub>2</sub> emissions. To achieve that goal, green or low-carbon energy is produced in Belgium or imported: green electricity from wind, sun and hydro; green methane from biomethane or synthetic methane; green hydrogen from electrolysis of green electricity. Each technology can be deployed up to a maximum capacity, reflecting e.g. spatial constraints. In order to achieve net-zero CO<sub>2</sub> emissions, low-carbon gas and electricity is complemented with carbon capture and storage.</p>
+
+<p>The methodology has been applied on Belgium’s energy system in 2050. Electricity and molecules (methane, hydrogen) are expected to be the main energy carriers.</p>
+
+<p>The methodology allows to calculate optimal investments in every technology – production, transport, conversion, storage – that ensure security of supply, competitiveness and sustainability.</p>
+
+<p>Several scientific publications have been published in the framework of the INTEGRATION project. See the <a href="methodology">Methodology</a> section for further details. This demonstration website is part of the deliverables of the INTEGRATION project.</p>
+
+<div class="columns">
+  <div class="column is-half has-text-centered">
+    <a href="https://www.uliege.be/">
+        <img alt="ULiège" src="img/uliege_logo.svg" style="max-width: 400px;" width="50%" />
+    </a>
+  </div>
+  <div class="column is-half has-text-centered">
+    <a href="https://www.fluxys.com/">
+        <img alt="Fluxys" src="img/Logo_Fluxys_Blue.svg" style="max-width: 400px;" width="50%" />
+    </a>
+  </div>
+</div>
+
+<p class="has-text-centered">
+  <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition">
+  <img alt="SPF Economie" src="img/logo-en.svg" style="max-width: 400px;" />
+  </a>
+</p>
+
+
+
+    
+</div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+
+        <div class="content has-text-centered">
+            <p class=""><b>INTEGRATION:</b>  Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition
+                by <a href="https://www.uliege.be/"> <br> ULiège </a> & <a href="https://www.fluxys.com/">Fluxys</a>.</p>
+            <p class=""> Funded by <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition"><b>Energy Transition Fund of the Belgian federal government</b></a></p>
+        </div>
+
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/" class="link">Home</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/methodology/" class="link">Methodology</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/system/" class="link">System</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Base Case</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulation/" class="link">Sensitivities</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Interactive&nbsp;Results</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/navigate/" class="link">How to Navigate</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/about/" class="link">About</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+
+    
+    <script src="/website_test/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>

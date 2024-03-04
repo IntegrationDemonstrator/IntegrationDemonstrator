@@ -1,0 +1,46 @@
+{% assign menus = site.data.[page.menubar] %}
+
+<aside class="menu">
+{% if page.menubar_collapsable %}
+    <ul class="menu-list" id="menubar-collapse-button-parent">
+        <li>
+            <a onclick="collapse_menu()" class="button is-light has-text-right">
+                <i class="fas fa-bars menubar-collapse-button"></i>
+            </a>
+        </li>
+    </ul>
+{% endif %}
+{% for menu in menus %}
+    <p class="menu-label">{{ menu.label }}</p>
+    <ul class="menu-list">
+        {% for item in menu.items %}
+        <li>
+            <a href="{{ item.link | relative_url }}" class="{% if item.link == page.url %}is-active{% endif %} has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="{{ item.name }}">
+                {% if item.icon %}
+                    <span class="icon"><i class="fas {{ item.icon }}"></i></span>
+                {% endif %}
+                <span class="menu-text">
+                    {{ item.name }}
+                </span>
+            </a>
+            {% if item.items %}
+            <ul>
+                {% for subitem in item.items %}
+                <li>
+                    <a href="{{ subitem.link | relative_url }}" class="{% if subitem.link == page.url %}is-active{% endif %}">
+                        {% if subitem.icon %}
+                            <span class="icon"><i class="fas {{ item.icon }}"></i></span>
+                        {% endif %}
+                        <span class="menu-text">
+                            {{ subitem.name }}
+                        </span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}    
+    </ul>
+{% endfor %}
+</aside>

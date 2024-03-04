@@ -1,0 +1,44 @@
+- name: Methodology
+  link: /methodology/
+- name: System
+  link: /system/
+- name: Base Case
+  link: /simulations/base_case/
+  dropdown:
+    - name: Key Results
+      link: /simulations/base_case/
+    - name: Energy Balances
+      link: /simulations/base_case/energy_balance/
+    - name: Capacities
+      link: /simulations/base_case/capacities/
+    - name: CO&#8322; Balance
+      link: /simulations/base_case/carbon_balance/
+    - name: Cost Overview
+      link: /simulations/base_case/cost_of_energy_system/
+    - name: Energy Storage
+      link: /simulations/base_case/energy_storage/
+    - name: Marginal Costs
+      link: /simulations/base_case/marginal_cost_of_commodities/
+- name: Sensitivities
+  link: /simulation/
+  dropdown:
+    - name: Overview
+      link: /simulation/
+    - name: High Renewable
+      link: /simulations/high_renewable/
+    - name: Farther Offshore Wind
+      link: /simulations/offshore_far/
+    - name: CO&#8322; Budget
+      link: /simulations/carbon_budget/
+    - name: H&#8322; Import Cost
+      link: /simulations/h2_import/
+    - name: CO&#8322; Export Capacity
+      link: /simulations/carbon_export/
+- name: Interactive Results
+  link: /simulations/all_simulations/
+- name: How to Navigate
+  link: /navigate/
+  end: True
+- name: About
+  link: /about/
+  end: True

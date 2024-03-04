@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/website_test/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/website_test/favicon3.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link href=" https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Base Case | INTEGRATION</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Base Case" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<meta property="og:description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<link rel="canonical" href="http://localhost:4000/website_test/simulations/base_case/" />
+<meta property="og:url" content="http://localhost:4000/website_test/simulations/base_case/" />
+<meta property="og:site_name" content="INTEGRATION" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Base Case" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites","headline":"Base Case","url":"http://localhost:4000/website_test/simulations/base_case/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/website_test/" class="navbar-item">
+                <img src="/website_test/favicon2.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                
+                
+                    
+                        
+                        <a href="/website_test/methodology/" class="navbar-item ">Methodology</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/system/" class="navbar-item ">System</a>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulations/base_case/" class="navbar-link is-active">Base Case</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulations/base_case/" class="navbar-item is-active">Key Results</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_balance/" class="navbar-item ">Energy Balances</a>
+                                
+                                <a href="/website_test/simulations/base_case/capacities/" class="navbar-item ">Capacities</a>
+                                
+                                <a href="/website_test/simulations/base_case/carbon_balance/" class="navbar-item ">CO&#8322; Balance</a>
+                                
+                                <a href="/website_test/simulations/base_case/cost_of_energy_system/" class="navbar-item ">Cost Overview</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_storage/" class="navbar-item ">Energy Storage</a>
+                                
+                                <a href="/website_test/simulations/base_case/marginal_cost_of_commodities/" class="navbar-item ">Marginal Costs</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulation/" class="navbar-link ">Sensitivities</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulation/" class="navbar-item ">Overview</a>
+                                
+                                <a href="/website_test/simulations/high_renewable/" class="navbar-item ">High Renewable</a>
+                                
+                                <a href="/website_test/simulations/offshore_far/" class="navbar-item ">Farther Offshore Wind</a>
+                                
+                                <a href="/website_test/simulations/carbon_budget/" class="navbar-item ">CO&#8322; Budget</a>
+                                
+                                <a href="/website_test/simulations/h2_import/" class="navbar-item ">H&#8322; Import Cost</a>
+                                
+                                <a href="/website_test/simulations/carbon_export/" class="navbar-item ">CO&#8322; Export Capacity</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/simulations/all_simulations/" class="navbar-item ">Interactive Results</a>
+                        
+                    
+                
+                    
+                
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                        <a href="/website_test/navigate/" class="navbar-item ">How to Navigate</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/about/" class="navbar-item ">About</a>
+                        
+                    
+                
+                
+
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-small  is-bold is-primary"  style="background: url('../../img/base.jpg') no-repeat center center; background-size: cover;" >
+    <div class="hero-body ">
+        <div class="container">
+
+            <div class="columns">
+                
+                <div class="column">
+                    <h1 class="title is-2">Base Case</h1>
+                     <p class="subtitle is-3" style="text-align: left">Key Results</p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-3-desktop is-3-tablet">
+                    
+
+<aside class="menu">
+
+    <ul class="menu-list" id="menubar-collapse-button-parent">
+        <li>
+            <a onclick="collapse_menu()" class="button is-light has-text-right">
+                <i class="fas fa-bars menubar-collapse-button"></i>
+            </a>
+        </li>
+    </ul>
+
+
+    <p class="menu-label"></p>
+    <ul class="menu-list">
+        
+        <li>
+            <a href="/website_test/simulations/base_case/" class="is-active has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Key Results">
+                
+                    <span class="icon"><i class="fas fa-key"></i></span>
+                
+                <span class="menu-text">
+                    Key Results
+                </span>
+            </a>
+            
+        </li>
+            
+    </ul>
+
+    <p class="menu-label">Analyses</p>
+    <ul class="menu-list">
+        
+        <li>
+            <a href="/website_test/simulations/base_case/energy_balance/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Energy Balances">
+                
+                    <span class="icon"><i class="fas fa-balance-scale-right"></i></span>
+                
+                <span class="menu-text">
+                    Energy Balances
+                </span>
+            </a>
+            
+        </li>
+        
+        <li>
+            <a href="/website_test/simulations/base_case/capacities/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Capacities">
+                
+                    <span class="icon"><i class="fas fa-ruler"></i></span>
+                
+                <span class="menu-text">
+                    Capacities
+                </span>
+            </a>
+            
+        </li>
+        
+        <li>
+            <a href="/website_test/simulations/base_case/carbon_balance/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="CO&#8322; Balance">
+                
+                    <span class="icon"><i class="fas fa-balance-scale-left"></i></span>
+                
+                <span class="menu-text">
+                    CO&#8322; Balance
+                </span>
+            </a>
+            
+        </li>
+        
+        <li>
+            <a href="/website_test/simulations/base_case/cost_of_energy_system/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Cost Overview">
+                
+                    <span class="icon"><i class="fas fa-euro-sign"></i></span>
+                
+                <span class="menu-text">
+                    Cost Overview
+                </span>
+            </a>
+            
+        </li>
+        
+        <li>
+            <a href="/website_test/simulations/base_case/energy_storage/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Energy Storage">
+                
+                    <span class="icon"><i class="fas fa-warehouse"></i></span>
+                
+                <span class="menu-text">
+                    Energy Storage
+                </span>
+            </a>
+            
+        </li>
+        
+        <li>
+            <a href="/website_test/simulations/base_case/marginal_cost_of_commodities/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Marginal Costs">
+                
+                    <span class="icon"><i class="fas fa-coins"></i></span>
+                
+                <span class="menu-text">
+                    Marginal Costs
+                </span>
+            </a>
+            
+        </li>
+            
+    </ul>
+
+</aside>
+                </div>
+                
+                <div class="column is-9">
+                    
+                    
+
+                    
+                    
+                    
+<div class="content">
+    <p>Achieving carbon neutrality in 2050 is feasible, with minimal unmet demand (“Energy Not Served”). However, it requires a large amount of CH4 and H<sub>2</sub> imports. In total, 200.5 TWh of molecules are imported, constituting 58% of the total annual energy demand. 97.8% of hydrogen is imported because of the limited renewable electricity available for hydrogen production in Belgium. The remaining fraction of hydrogen is produced in the COASTAL cluster, converting electricity generated from offshore wind turbines and solar PV from the INLAND cluster.</p>
+
+<p>Both offshore and onshore wind energy are deployed at their maximum potential with capacity factors of 22.6% and 38.2% respectively. Interestingly, carbon neutrality is reached without fully exploiting the solar PV potential, due to its lower capacity factor of 11.6% and the limit on the power grid capacity. The biomethane production potential is fully deployed.</p>
+
+<p>Direct Air Capture (DAC) is required to attain carbon neutrality. Post-Combustion Carbon Capture (PCCC) is used nearly at full capacity. The total system cost stands at €20.39 billion per year, equivalent to an average cost of €89.34/MWh: €[]/MWh for electricity, €[]/MWh for methane and €[]/MWh for hydrogen.</p>
+
+<p><img src="../../img/basecase.png" alt="Base case summary" /></p>
+
+<p>The detailed results of the base case are presented in the following sections:</p>
+
+<ul>
+  <li><strong>Energy Balances</strong>: balance of input (production, import, output of conversion) and output (final demand, export, input of conversion) for electricity, hydrogen and methane – per year, month, day or hour;</li>
+  <li><strong>Capacities</strong>: for each technology related to the production, transport, storage or conversion of electricity, hydrogen and methane, capacity to install in the optimal energy system;</li>
+  <li><strong>CO<sub>2</sub> Balance</strong>: balance of CO<sub>2</sub> emissions (methane used as final consumption and power plants)- and CO<sub>2</sub> withdrawals (carbon capture, bio-energy);</li>
+  <li><strong>Cost Overview</strong>: annualized cost for each technology related to the production, transport, storage or conversion of electricity, hydrogen, methane and CO<sub>2</sub>;</li>
+  <li><strong>Energy Storage</strong>: for each storage technology of electricity, hydrogen and methane, storage capacity to install;</li>
+  <li><strong>Marginal Costs</strong>: electricity, methane and hydrogen cost/price hour by hour in a perfect market where the marginal supply balances the marginal demand; for CO<sub>2</sub> it provides a yearly abatement cost.</li>
+</ul>
+
+
+
+
+    
+        <div class="columns is-mobile">
+            <div class="column">
+                
+            </div>
+            <div class="column is-right">
+                
+                    <div class="buttons is-right">
+                        <a class="button is-link" href="/website_test/simulations/base_case/energy_balance">
+                            <span>Energy Balances</span>
+                            <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                
+            </div>
+        </div>
+    
+</div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+
+        <div class="content has-text-centered">
+            <p class=""><b>INTEGRATION:</b>  Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition
+                by <a href="https://www.uliege.be/"> <br> ULiège </a> & <a href="https://www.fluxys.com/">Fluxys</a>.</p>
+            <p class=""> Funded by <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition"><b>Energy Transition Fund of the Belgian federal government</b></a></p>
+        </div>
+
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/" class="link">Home</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/methodology/" class="link">Methodology</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/system/" class="link">System</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Base Case</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulation/" class="link">Sensitivities</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Interactive&nbsp;Results</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/navigate/" class="link">How to Navigate</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/about/" class="link">About</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+
+    
+    <script src="/website_test/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/website_test/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/website_test/favicon3.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link href=" https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Base Case | INTEGRATION</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Base Case" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<meta property="og:description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<link rel="canonical" href="http://localhost:4000/website_test/simulations/base_case/energy_balance/" />
+<meta property="og:url" content="http://localhost:4000/website_test/simulations/base_case/energy_balance/" />
+<meta property="og:site_name" content="INTEGRATION" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Base Case" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites","headline":"Base Case","url":"http://localhost:4000/website_test/simulations/base_case/energy_balance/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/website_test/" class="navbar-item">
+                <img src="/website_test/favicon2.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                
+                
+                    
+                        
+                        <a href="/website_test/methodology/" class="navbar-item ">Methodology</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/system/" class="navbar-item ">System</a>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulations/base_case/" class="navbar-link is-active">Base Case</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulations/base_case/" class="navbar-item ">Key Results</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_balance/" class="navbar-item is-active">Energy Balances</a>
+                                
+                                <a href="/website_test/simulations/base_case/capacities/" class="navbar-item ">Capacities</a>
+                                
+                                <a href="/website_test/simulations/base_case/carbon_balance/" class="navbar-item ">CO&#8322; Balance</a>
+                                
+                                <a href="/website_test/simulations/base_case/cost_of_energy_system/" class="navbar-item ">Cost Overview</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_storage/" class="navbar-item ">Energy Storage</a>
+                                
+                                <a href="/website_test/simulations/base_case/marginal_cost_of_commodities/" class="navbar-item ">Marginal Costs</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulation/" class="navbar-link ">Sensitivities</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulation/" class="navbar-item ">Overview</a>
+                                
+                                <a href="/website_test/simulations/high_renewable/" class="navbar-item ">High Renewable</a>
+                                
+                                <a href="/website_test/simulations/offshore_far/" class="navbar-item ">Farther Offshore Wind</a>
+                                
+                                <a href="/website_test/simulations/carbon_budget/" class="navbar-item ">CO&#8322; Budget</a>
+                                
+                                <a href="/website_test/simulations/h2_import/" class="navbar-item ">H&#8322; Import Cost</a>
+                                
+                                <a href="/website_test/simulations/carbon_export/" class="navbar-item ">CO&#8322; Export Capacity</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/simulations/all_simulations/" class="navbar-item ">Interactive Results</a>
+                        
+                    
+                
+                    
+                
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                        <a href="/website_test/navigate/" class="navbar-item ">How to Navigate</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/about/" class="navbar-item ">About</a>
+                        
+                    
+                
+                
+
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-small  is-bold is-primary"  style="background: url('../../../img/base.jpg') no-repeat center center; background-size: cover;" >
+    <div class="hero-body ">
+        <div class="container">
+
+            <div class="columns">
+                
+                <div class="column">
+                    <h1 class="title is-2">Base Case</h1>
+                     <p class="subtitle is-3" style="text-align: left">Energy Balance</p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-3-desktop is-3-tablet">
+                    
+
+<aside class="menu">
+
+    <ul class="menu-list" id="menubar-collapse-button-parent">
+        <li>
+            <a onclick="collapse_menu()" class="button is-light has-text-right">
+                <i class="fas fa-bars menubar-collapse-button"></i>
+            </a>
+        </li>
+    </ul>
+
+
+    <p class="menu-label"></p>
+    <ul class="menu-list">
+        
+        <li>
+            <a href="/website_test/simulations/base_case/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Key Results">
+                
+                    <span class="icon"><i class="fas fa-key"></i></span>
+                
+                <span class="menu-text">
+                    Key Results
+                </span>
+            </a>
+            
+        </li>
+            
+    </ul>
+
+    <p class="menu-label">Analyses</p>
+    <ul class="menu-list">
+        
+        <li>
+            <a href="/website_test/simulations/base_case/energy_balance/" class="is-active has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Energy Balances">
+                
+                    <span class="icon"><i class="fas fa-balance-scale-right"></i></span>
+                
+                <span class="menu-text">
+                    Energy Balances
+                </span>
+            </a>
+            
+        </li>
+        
+        <li>
+            <a href="/website_test/simulations/base_case/capacities/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Capacities">
+                
+                    <span class="icon"><i class="fas fa-ruler"></i></span>
+                
+                <span class="menu-text">
+                    Capacities
+                </span>
+            </a>
+            
+        </li>
+        
+        <li>
+            <a href="/website_test/simulations/base_case/carbon_balance/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="CO&#8322; Balance">
+                
+                    <span class="icon"><i class="fas fa-balance-scale-left"></i></span>
+                
+                <span class="menu-text">
+                    CO&#8322; Balance
+                </span>
+            </a>
+            
+        </li>
+        
+        <li>
+            <a href="/website_test/simulations/base_case/cost_of_energy_system/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Cost Overview">
+                
+                    <span class="icon"><i class="fas fa-euro-sign"></i></span>
+                
+                <span class="menu-text">
+                    Cost Overview
+                </span>
+            </a>
+            
+        </li>
+        
+        <li>
+            <a href="/website_test/simulations/base_case/energy_storage/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Energy Storage">
+                
+                    <span class="icon"><i class="fas fa-warehouse"></i></span>
+                
+                <span class="menu-text">
+                    Energy Storage
+                </span>
+            </a>
+            
+        </li>
+        
+        <li>
+            <a href="/website_test/simulations/base_case/marginal_cost_of_commodities/" class=" has-tooltip-arrow has-tooltip-right disabled-tooltip" data-tooltip-disabled="Marginal Costs">
+                
+                    <span class="icon"><i class="fas fa-coins"></i></span>
+                
+                <span class="menu-text">
+                    Marginal Costs
+                </span>
+            </a>
+            
+        </li>
+            
+    </ul>
+
+</aside>
+                </div>
+                
+                <div class="column is-9">
+                    
+                    
+
+                    
+                    
+                    
+<div class="content">
+    <p>First, have a look at <a href="../../../navigate">How to Navigate</a> to grasp all the capabilities of the interactive results.</p>
+
+<div pbi-resize="powerbi" pbi-resize-src="https://app.powerbi.com/view?r=eyJrIjoiZDIzNTk2ZTItMTRlNC00Y2IyLThiNjctODcwMzM1YjcxOGM1IiwidCI6ImRkOTczZjdjLTg0ZjUtNDcwYi05MWQwLTA0M2JlZTg3ZTA3ZiIsImMiOjh9" pbi-resize-min-width="600" pbi-default-width="600px" pbi-default-height="656" pbi-resize-width="16" pbi-resize-height="9" pbi-resize-load-event="page-load" pbi-resize-header="true" pbi-resize-m-src="https://app.powerbi.com/view?r=eyJrIjoiZDIzNTk2ZTItMTRlNC00Y2IyLThiNjctODcwMzM1YjcxOGM1IiwidCI6ImRkOTczZjdjLTg0ZjUtNDcwYi05MWQwLTA0M2JlZTg3ZTA3ZiIsImMiOjh9" pbi-resize-m-width="9" pbi-resize-m-height="9" style="position: relative;"><iframe frameborder="0" allowfullscreen="true"></iframe></div>
+<script type="text/javascript">
+!function(){if("undefined"==typeof window.powerbiresizescript){window.powerbiresizescript=1;window.onmessage=function(event){var isReportPageLoadedEvent=function(event){try{if(event&&event.data&&event.data.url==='/reports/undefined/events/pageChanged'){return!0}}catch(error){return undefined}};if(isReportPageLoadedEvent(event)){var iframe=getIframeElement(event.source)
+setTimeout(function(){if(iframe&&iframe.parentNode.children.length>1){switch(iframe.parentNode.getAttribute('pbi-resize-load-event')){case 'click':showElement(iframe);break;case 'page-load':case 'seconds-timeout':case 'in-view':var button=getChildByTag(iframe.parentNode,'div');setButtonState(button,'readynow');break}}},(iframe.parentNode.getAttribute('pbi-resize-delay-show')||1)*1000)}};function getChildByTag(parent,tagName){if(parent){for(var i=0;i<parent.children.length;i++){if(parent.children[i].tagName.toLowerCase()===tagName.toLowerCase()){return parent.children[i]}}}
+return null}
+function getIframeElement(srcWindow){var frames=document.getElementsByTagName('iframe');for(var i=0;i<frames.length;i++){if(frames[i].contentWindow===srcWindow){return frames[i]}}}
+function showElement(iframe){if(!iframe){return}
+var parent=iframe.parentNode;var button=getChildByTag(parent,'div');if(button){parent.removeChild(button)}
+var spinner=getChildByTag(parent,'span');if(spinner){parent.removeChild(spinner)}
+iframe.style.position='static';iframe.style.visibility='visible';var img=getChildByTag(parent,'img');if(img){parent.removeChild(img)}}
+function setButtonState(button,state){button.setAttribute('data-state',state);var states=[{state:'waiting',text:button.getAttribute('pbi-resize-wait-txt')},{state:'loading',text:button.getAttribute('pbi-resize-load-txt')},{state:'loadingnow',text:button.getAttribute('pbi-resize-load-txt')},{state:'ready',text:button.getAttribute('pbi-resize-rdy-txt')},{state:'readynow',text:button.getAttribute('pbi-resize-load-txt')}]
+var text='';for(var i=0;i<states.length;i++){if(states[i].state===state){text=states[i].text}}
+var spinner=getChildByTag(button,'span');button.innerHTML=text+spinner.outerHTML;switch(state){case 'loading':button.onclick=function(){setButtonState(button,'loadingnow')}
+button.parentNode.onclick=function(){setButtonState(button,'loadingnow')}
+break;case 'readynow':resize();var iframe=getChildByTag(button.parentNode,'iframe');showElement(iframe)
+break;case 'ready':resize();var spinner=getChildByTag(button,'span');spinner.style.display='none';button.style.width='auto';button.onclick=function(e){var iframe=getChildByTag(e.target.parentNode,'iframe');showElement(iframe)}
+button.parentNode.onclick=function(e){var iframe=getChildByTag(e.target.parentNode,'iframe');showElement(iframe)}
+break}}
+var e=function(){for(var e=document.querySelectorAll('[pbi-resize="powerbi"]'),i=0;i<e.length;i++){e[i].style.width='100%';var actualWidth=e[i].clientWidth;var contentMinWidth=e[i].getAttribute("pbi-resize-min-width");var height=e[i].getAttribute('height');var webImg=e[i].getAttribute('pbi-resize-img');var mobileImg=e[i].getAttribute('pbi-resize-m-img')||webImg;var webWidth=e[i].getAttribute("pbi-resize-width");var webHeight=e[i].getAttribute("pbi-resize-height");var webSrc=e[i].getAttribute("pbi-resize-src");var mobileWidth=e[i].getAttribute("pbi-resize-m-width");var mobileHeight=e[i].getAttribute("pbi-resize-m-height");var mobileSrc=e[i].getAttribute("pbi-resize-m-src");var loadEvent=e[i].getAttribute('pbi-resize-load-event');var header=e[i].getAttribute('pbi-resize-header');var img=getChildByTag(e[i],'img');var iframe=getChildByTag(e[i],'iframe');var currentSrc=iframe?iframe.getAttribute('src'):null;var mobileRatio=mobileWidth/mobileHeight;var webRatio=webWidth/webHeight;var isWebSize=actualWidth>contentMinWidth;var newSrc=!(webSrc&&mobileSrc)?webSrc:(isWebSize?webSrc:mobileSrc);var resizedToWeb=((iframe&&iframe.src==mobileSrc)||(img&&img.src==mobileImg))&&isWebSize&&mobileSrc!=webSrc;var resizedToMobile=((iframe&&iframe.src==webSrc)||(img&&img.src==webImg))&&!isWebSize&&mobileSrc!=webSrc;var currentSrcIsImage=e[i].children.length>1?!0:!1;if(!currentSrc){if(iframe){iframe.style.position='absolute';iframe.style.top=0;iframe.style.left=0;iframe.style.visibility='hidden'}
+if(img){img.setAttribute('src',(!isWebSize&&mobileImg)?mobileImg:webImg)}
+if((!webImg&&webSrc&&isWebSize)||(!mobileImg&&mobileSrc&&!isWebSize)){iframe.setAttribute('src',(!isWebSize&&mobileSrc)?mobileSrc:webSrc);showElement(iframe);resize();break}else if((webImg&&webSrc)||(mobileImg&&mobileSrc)){var button=getChildByTag(e[i],'div');setButtonState(button,'waiting');switch(loadEvent){case 'page-load':loadIframe(iframe.parentNode,newSrc);break;case 'seconds-timeout':var timeout=parseInt(e[i].getAttribute('pbi-resize-seconds'))*1000;t=setTimeout(function(){loadIframe(iframe.parentNode,newSrc)},timeout);break;case 'in-view':if(currentSrcIsImage&&!iframe.src&&isInViewport(img)){loadIframe(iframe.parentNode,newSrc)}
+window.addEventListener('scroll',function(){if(currentSrcIsImage&&!iframe.src&&isInViewport(img)){loadIframe(iframe.parentNode,newSrc)}},!1);break;case 'click':button.onclick=function(){loadIframe(iframe.parentNode,newSrc)}
+e[i].firstChild.onclick=function(){loadIframe(iframe.parentNode,newSrc)}
+break}}}
+if((currentSrc==webImg&&!webImg&&webSrc&&isWebSize)||(currentSrc==mobileImg&&!mobileImg&&mobileSrc&&!isWebSize)){showElement(iframe)}
+else if(resizedToMobile||resizedToWeb){changeCurrentSrc(e[i].children[0],isWebSize,currentSrcIsImage?webImg:webSrc,currentSrcIsImage?mobileImg:mobileSrc,newSrc)}
+if(currentSrcIsImage&&((resizedToMobile&&!mobileImg&&mobileSrc)||(resizedToWeb&&!webImg&&webSrc))){showElement(iframe)}
+else if(!currentSrcIsImage&&((resizedToMobile&&mobileImg&&!mobileSrc)||(resizedToWeb&&webImg&&!webSrc))){showElement(iframe)}
+if(img&&img.parentNode){resizeElement(img,header,actualWidth,isWebSize,webRatio,mobileRatio,webHeight,mobileHeight)}
+if(iframe){resizeElement(iframe,header,actualWidth,isWebSize,webRatio,mobileRatio,webHeight,mobileHeight)}}};function resizeElement(element,header,actualWidth,isWebSize,webRatio,mobileRatio,webHeight,mobileHeight){var warn=!1;if(mobileRatio&&mobileHeight){var pageSize=isWebSize?webRatio:mobileRatio;var pageHeight=isWebSize?webHeight:mobileHeight}
+else{var pageSize=webRatio;var pageHeight=webHeight}
+var p169=16.0/9.0;var p43=4.0/3.0;var heightOffset=header.toLowerCase()=="true"?36:56;if(actualWidth<569&&pageSize===p169){element.parentNode.style.width="568.88px";element.style.width="568.88px";element.style.height=320+heightOffset+"px";warn=!0}
+else if(actualWidth<=437&&pageSize===p43){element.parentNode.style.width="426.66px";element.style.width="426.66px";element.style.height=320+heightOffset+"px";warn=!0}
+else if(actualWidth<320||actualWidth/pageSize<320||(pageHeight<320&&pageSize!==p169&&pageSize!==p43)){var height=Math.max(actualWidth,320)/pageSize;if(height<320){element.parentNode.style.width=320*pageSize+"px";element.style.width=320*pageSize+"px";element.style.height=320+heightOffset+"px"}
+else if(actualWidth<320){element.parentNode.style.width=320+"px";element.style.width=320+"px";element.style.height=height+heightOffset+"px"}
+else{element.parentNode.style.width=actualWidth+"px";element.style.width=actualWidth+"px";element.style.height=height+heightOffset+"px"}
+warn=!0}
+else{element.parentNode.style.width="100%";element.style.width="100%";element.style.height=Math.max(element.clientWidth/pageSize,320)+heightOffset+"px"}
+if(warn){console.warn("pbi-resize: requested iframe dimension is below the minimum supported dimensions. Minimum supported width is 320px. Minimum supported height is 376px. Change your Power BI report page size to ensure your content looks great when embedded in your web page or blog.")}}
+document.addEventListener("DOMContentLoaded",e);window.addEventListener("resize",e);window.addEventListener("orientationchange",e);function isInViewport(e){var bounding=e.getBoundingClientRect();return(bounding.top>=0&&bounding.left>=0&&bounding.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&bounding.right<=(window.innerWidth||document.documentElement.clientWidth))};function changeCurrentSrc(e,isWebSize,web,mobile,newSrc){if(web&&mobile){var iframe=e.nextElementSibling;if(e instanceof HTMLImageElement&&iframe.src&&(newSrc!=iframe.src)){iframe.setAttribute('src',newSrc);setButtonState(iframe.nextElementSibling,'loading')}
+var currentSrc=isWebSize?web:mobile;e.setAttribute('src',currentSrc)}}
+function resize(){if(navigator.userAgent.indexOf('MSIE')!==-1||navigator.appVersion.indexOf('Trident/')>0){var evt=document.createEvent('UIEvents');evt.initUIEvent('resize',!0,!1,window,0);window.dispatchEvent(evt)}else{window.dispatchEvent(new Event('resize'))}}
+function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var button=getChildByTag(parent,'div');var spinner=getChildByTag(button,'span');spinner.style.display='block';var style=document.createElement('style');style.type='text/css';var keyFrames='@keyframes pbi-resize-spinner {\
+                0% {\
+                    transform: rotate(0deg);\
+                }\
+                100% {\
+                    transform: rotate(360deg);\
+                }\
+            }';style.innerHTML=keyFrames;document.getElementsByTagName('head')[0].appendChild(style);iframe.setAttribute('src',src);iframe.setAttribute('frameborder','0');iframe.setAttribute('allowFullScreen','true');setButtonState(button,'loading')}}}();
+</script>
+
+<p>Offshore wind, onshore wind and solar PV produce 73.31 TWh of electricity annually, while gas-fired combined cycles (CCGTs) produce 61.32 TWh, ensuring a low level of “Energy Not Served”. Wind and solar are intermittent and have a relatively low capacity factor (ratio between the energy effectively produced and the amount that could have been produced if an asset produced 100% of the time). In the optimum energy system, a small part of wind and solar energy is curtailed, when electricity production far exceeds demand.</p>
+
+<div class="table-container">
+
+  <table>
+    <thead>
+      <tr>
+        <th> </th>
+        <th>Total production (TWh)</th>
+        <th>Curtailment (TWh)</th>
+        <th>Capacity factor (%)</th>
+        <th>Usage Factor (%)</th>
+        <th>Hours of curtailment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Photovoltaic panels</td>
+        <td>28.73</td>
+        <td>0.5</td>
+        <td>11.58</td>
+        <td>98.3</td>
+        <td>210</td>
+      </tr>
+      <tr>
+        <td>Onshore wind turbines</td>
+        <td>17.79</td>
+        <td>0.47</td>
+        <td>22.57</td>
+        <td>97.43</td>
+        <td>405</td>
+      </tr>
+      <tr>
+        <td>Offshore wind turbines</td>
+        <td>26.79</td>
+        <td>2.15</td>
+        <td>38.22</td>
+        <td>92.57</td>
+        <td>727</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p>Despite the capacities installed, renewable technologies never produce at their maximum capacity simultaneously. The peak combined production over an hour reaches 32.98 GW: 18.83 GW for PVs, 7 GW for offshore wind turbines and 7.15 GW for onshore wind turbines, taking curtailment into account.</p>
+
+<p>CCGT is the only carbon-emitting dispatchable technology installed in the optimal system. CCGT plants produce 61.32 TWh of electricity, resulting in a capacity factor of 58.8 %.</p>
+
+<p>PCCCs capture most of the CO<sub>2</sub> emitted by CCGTs, which requires 7.46 TWh of electricity. Subtracting this consumption from electricity produced by CCGTs, results in a net production of 53.86 TWh of electricity. PCCCs are installed at 97% of the CCGT capacity.</p>
+
+<p>Electricity consumption for the capture of CO<sub>2</sub> and for electrolysis reach their highest values between May and August. It follows that electricity produced by solar PVs are the main source of electricity for DAC and electrolysers and that DAC is used mainly when electricity demand is lower.</p>
+
+<p>The hydrogen demand of 77.68 TWh is mostly imported: only 1.71 TWh is produced in Belgium in the COASTAL cluster.</p>
+
+<p>The demand for methane is mostly used for power in CCGTs (102.21 TWh) and in final energy demand (19.59 TWh). The full potential of biomethane production in Belgium is installed (14.08 TWh) and the rest is imported (107.78 TWh). A limited storage capacity is deployed.</p>
+
+<p>In total, 16.74 TWh of electricity, 75.97 TWh of hydrogen and 107.77 TWh of natural gas are imported. The next table shows the amount of energy imported or exported and the peak value of the energy imported or exported for each import and export node and neighbour country clusters.</p>
+
+<div class="table-container">
+
+  <table>
+    <thead>
+      <tr>
+        <th> </th>
+        <th>Preinstalled capacity κ<sup>n</sup></th>
+        <th>Total energy q<sup>n<sub>i</sub></sup></th>
+        <th>Peak power q<sup>n<sub>i</sub></sup></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> </td>
+        <td>(GW or kt/h)</td>
+        <td>(TWh or Mt)</td>
+        <td>(GW or kt/h)</td>
+      </tr>
+      <tr>
+        <td>INL Elec Denmark</td>
+        <td>2.00</td>
+        <td>0.92</td>
+        <td>0.38</td>
+      </tr>
+      <tr>
+        <td>INL Elec United Kingdom</td>
+        <td>2.40</td>
+        <td>4.75</td>
+        <td>2.40</td>
+      </tr>
+      <tr>
+        <td>INL Elec Luxembourg</td>
+        <td>1.00</td>
+        <td>0.01</td>
+        <td>0.01</td>
+      </tr>
+      <tr>
+        <td>INL Elec France</td>
+        <td>8.30</td>
+        <td>5.53</td>
+        <td>5.43</td>
+      </tr>
+      <tr>
+        <td>INL Elec Netherlands</td>
+        <td>5.40</td>
+        <td>2.17</td>
+        <td>1.05</td>
+      </tr>
+      <tr>
+        <td>INL Elec Germany</td>
+        <td>1.00</td>
+        <td>3.36</td>
+        <td>1.00</td>
+      </tr>
+      <tr>
+        <td>INL H<sub>2</sub> Netherlands</td>
+        <td>25.65</td>
+        <td>75.97</td>
+        <td>12.28</td>
+      </tr>
+      <tr>
+        <td>COA CH<sub>4</sub>  Norway</td>
+        <td>18.35</td>
+        <td>0.00</td>
+        <td>0.00</td>
+      </tr>
+      <tr>
+        <td>COA CH<sub>4</sub>  United Kingdom</td>
+        <td>24.50</td>
+        <td>0.00</td>
+        <td>0.00</td>
+      </tr>
+      <tr>
+        <td>COA CH<sub>4</sub> France</td>
+        <td>9.37</td>
+        <td>78.77</td>
+        <td>9.37</td>
+      </tr>
+      <tr>
+        <td>COA CH<sub>4</sub>  North Africa</td>
+        <td>26.81</td>
+        <td>0.00</td>
+        <td>0.00</td>
+      </tr>
+      <tr>
+        <td>INL CH<sub>4</sub>  Germany</td>
+        <td>15.06</td>
+        <td>29.00</td>
+        <td>15.06</td>
+      </tr>
+      <tr>
+        <td>INL CO<sub>2</sub> Norway</td>
+        <td>3.50</td>
+        <td>21.76</td>
+        <td>3.26</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p>Electricity is imported from the United Kingdom, France and Germany, with 4.75, 5.53 and 3.36 TWh respectively. France and the United Kingdom are exporting nuclear power massively during winter. Germany has the most renewable technologies installed, leading to high exports of energy with production exceeds demand. Small amounts of electricity is imported from Denmark, the Netherlands and Germany.</p>
+
+
+
+    
+        <div class="columns is-mobile">
+            <div class="column">
+                
+                    <div class="buttons">
+                        <a class="button is-link" href="/website_test/simulations/base_case/">
+                            <span class="icon"><i class="fas fa-arrow-left"></i></span>
+                            <span>Key Results</span>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="column is-right">
+                
+                    <div class="buttons is-right">
+                        <a class="button is-link" href="/website_test/simulations/base_case/capacities/">
+                            <span>Capacities</span>
+                            <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                
+            </div>
+        </div>
+    
+</div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+
+        <div class="content has-text-centered">
+            <p class=""><b>INTEGRATION:</b>  Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition
+                by <a href="https://www.uliege.be/"> <br> ULiège </a> & <a href="https://www.fluxys.com/">Fluxys</a>.</p>
+            <p class=""> Funded by <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition"><b>Energy Transition Fund of the Belgian federal government</b></a></p>
+        </div>
+
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/" class="link">Home</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/methodology/" class="link">Methodology</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/system/" class="link">System</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Base Case</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulation/" class="link">Sensitivities</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Interactive&nbsp;Results</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/navigate/" class="link">How to Navigate</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/about/" class="link">About</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+
+    
+    <script src="/website_test/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>

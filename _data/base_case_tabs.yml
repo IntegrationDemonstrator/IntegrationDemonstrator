@@ -1,0 +1,21 @@
+alignment: is-left
+style: is-boxed
+items:
+  - name: Overview
+    link: /simulations/base_case/
+  - name: Energy Balances
+    link: /simulations/base_case/energy_balance/
+  - name: Capacities
+    link: /simulations/base_case/capacities/
+  - name: Energy storage
+    link: /simulations/base_case/energy_storage/
+  - name: CO2 balance
+    link: /simulations/base_case/carbon_balance/
+  - name: CO2 capacities
+    link: /simulations/base_case/carbon_capacities/
+  - name: Cost of the energy system
+    link: /simulations/base_case/cost_of_energy_system/
+  - name: Marginal cost of commodities
+    link: /simulations/base_case/marginal_cost_of_commodities/
+  - name: Interactive results
+    link: /simulations/base_case/results/

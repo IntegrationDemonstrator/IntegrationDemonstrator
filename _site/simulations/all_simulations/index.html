@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/website_test/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/website_test/favicon3.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link href=" https://cdn.jsdelivr.net/npm/@creativebulma/bulma-tooltip@1.2.0/dist/bulma-tooltip.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Interactive Results | INTEGRATION</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Interactive Results" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<meta property="og:description" content="The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites" />
+<link rel="canonical" href="http://localhost:4000/website_test/simulations/all_simulations/" />
+<meta property="og:url" content="http://localhost:4000/website_test/simulations/all_simulations/" />
+<meta property="og:site_name" content="INTEGRATION" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Interactive Results" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites","headline":"Interactive Results","url":"http://localhost:4000/website_test/simulations/all_simulations/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/website_test/" class="navbar-item">
+                <img src="/website_test/favicon2.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                
+                
+                    
+                        
+                        <a href="/website_test/methodology/" class="navbar-item ">Methodology</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/system/" class="navbar-item ">System</a>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulations/base_case/" class="navbar-link ">Base Case</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulations/base_case/" class="navbar-item ">Key Results</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_balance/" class="navbar-item ">Energy Balances</a>
+                                
+                                <a href="/website_test/simulations/base_case/capacities/" class="navbar-item ">Capacities</a>
+                                
+                                <a href="/website_test/simulations/base_case/carbon_balance/" class="navbar-item ">CO&#8322; Balance</a>
+                                
+                                <a href="/website_test/simulations/base_case/cost_of_energy_system/" class="navbar-item ">Cost Overview</a>
+                                
+                                <a href="/website_test/simulations/base_case/energy_storage/" class="navbar-item ">Energy Storage</a>
+                                
+                                <a href="/website_test/simulations/base_case/marginal_cost_of_commodities/" class="navbar-item ">Marginal Costs</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a href="/website_test/simulation/" class="navbar-link ">Sensitivities</a>
+                            <div class="navbar-dropdown">
+                                
+                                <a href="/website_test/simulation/" class="navbar-item ">Overview</a>
+                                
+                                <a href="/website_test/simulations/high_renewable/" class="navbar-item ">High Renewable</a>
+                                
+                                <a href="/website_test/simulations/offshore_far/" class="navbar-item ">Farther Offshore Wind</a>
+                                
+                                <a href="/website_test/simulations/carbon_budget/" class="navbar-item ">CO&#8322; Budget</a>
+                                
+                                <a href="/website_test/simulations/h2_import/" class="navbar-item ">H&#8322; Import Cost</a>
+                                
+                                <a href="/website_test/simulations/carbon_export/" class="navbar-item ">CO&#8322; Export Capacity</a>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/simulations/all_simulations/" class="navbar-item is-active">Interactive Results</a>
+                        
+                    
+                
+                    
+                
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                        <a href="/website_test/navigate/" class="navbar-item ">How to Navigate</a>
+                        
+                    
+                
+                    
+                        
+                        <a href="/website_test/about/" class="navbar-item ">About</a>
+                        
+                    
+                
+                
+
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-small  is-bold is-primary"  style="background: url('../../img/simulations.jpg') no-repeat center center; background-size: cover;" >
+    <div class="hero-body ">
+        <div class="container">
+
+            <div class="columns">
+                
+                <div class="column">
+                    <h1 class="title is-2">Interactive Results</h1>
+                     <p class="subtitle is-3" style="text-align: left"><br></p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+
+                    
+                    
+                    
+<div class="content">
+    <p>In this section all data of the base case and the sensitivities are accessible through a single PowerBI screen. Once a scenario is chosen, the following pages show all data in detailed screens:</p>
+
+<div class="table-container">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Scenarios</th>
+        <th>Available Analyses</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>- <strong>Base Case</strong><br /> - <strong>High Renewable</strong> <br />- <strong>Farther Offshore Wind</strong>: <br />             distance of 40, 47, 50, 60, 70, 80, 90, 100, 120, 150, 200, 500, 750 and 1000 km  <br /> - <strong>CO<sub>2</sub> Budget</strong><br />            budget of 0.00, 0.05, 0.10, 0.15 and 0.20 ??? <br /> - <strong>H<sub>2</sub> Import Cost</strong><br />            cost of 100.0, 105.0, 108.0, 112.5, 125.0, 137.5, 150.0, 162.5, 175.0, 187.5, 200.0, 225.0, 250.0, 275.0 and 300.0 €/MWh <br />- <strong>CO<sub>2</sub> Export Capacity</strong>: <br />             capacity of 0.5, 1.0, 1.5, 2.0, 2.5, 3.0 and 3.5 kt/h</td>
+        <td>- Page 1: Energy Balances <br />- Page 2: Capacities <br />- Page 3: CO<sub>2</sub> Balance <br />- Page 4: Cost Overview <br />- Page 5: Energy Storage <br /> - Page 6: Marginal Costs</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p>First, have a look at <a href="../../navigate">How to Navigate</a> to grasp all the capabilities of the interactive results.</p>
+
+<div pbi-resize="powerbi" pbi-resize-src="https://app.powerbi.com/view?r=eyJrIjoiMTI1MGNiNWYtZDA4Yi00NjIwLTk3MjMtMDU5NjMwZGEyZTlmIiwidCI6ImRkOTczZjdjLTg0ZjUtNDcwYi05MWQwLTA0M2JlZTg3ZTA3ZiIsImMiOjh9" pbi-resize-min-width="600" pbi-default-width="600px" pbi-default-height="656" pbi-resize-width="16" pbi-resize-height="9" pbi-resize-load-event="page-load" pbi-resize-header="true" pbi-resize-m-src="https://app.powerbi.com/view?r=eyJrIjoiMTI1MGNiNWYtZDA4Yi00NjIwLTk3MjMtMDU5NjMwZGEyZTlmIiwidCI6ImRkOTczZjdjLTg0ZjUtNDcwYi05MWQwLTA0M2JlZTg3ZTA3ZiIsImMiOjh9" pbi-resize-m-width="9" pbi-resize-m-height="9" style="position: relative;"><iframe frameborder="0" allowfullscreen="true"></iframe></div>
+<script type="text/javascript">
+!function(){if("undefined"==typeof window.powerbiresizescript){window.powerbiresizescript=1;window.onmessage=function(event){var isReportPageLoadedEvent=function(event){try{if(event&&event.data&&event.data.url==='/reports/undefined/events/pageChanged'){return!0}}catch(error){return undefined}};if(isReportPageLoadedEvent(event)){var iframe=getIframeElement(event.source)
+setTimeout(function(){if(iframe&&iframe.parentNode.children.length>1){switch(iframe.parentNode.getAttribute('pbi-resize-load-event')){case 'click':showElement(iframe);break;case 'page-load':case 'seconds-timeout':case 'in-view':var button=getChildByTag(iframe.parentNode,'div');setButtonState(button,'readynow');break}}},(iframe.parentNode.getAttribute('pbi-resize-delay-show')||1)*1000)}};function getChildByTag(parent,tagName){if(parent){for(var i=0;i<parent.children.length;i++){if(parent.children[i].tagName.toLowerCase()===tagName.toLowerCase()){return parent.children[i]}}}
+return null}
+function getIframeElement(srcWindow){var frames=document.getElementsByTagName('iframe');for(var i=0;i<frames.length;i++){if(frames[i].contentWindow===srcWindow){return frames[i]}}}
+function showElement(iframe){if(!iframe){return}
+var parent=iframe.parentNode;var button=getChildByTag(parent,'div');if(button){parent.removeChild(button)}
+var spinner=getChildByTag(parent,'span');if(spinner){parent.removeChild(spinner)}
+iframe.style.position='static';iframe.style.visibility='visible';var img=getChildByTag(parent,'img');if(img){parent.removeChild(img)}}
+function setButtonState(button,state){button.setAttribute('data-state',state);var states=[{state:'waiting',text:button.getAttribute('pbi-resize-wait-txt')},{state:'loading',text:button.getAttribute('pbi-resize-load-txt')},{state:'loadingnow',text:button.getAttribute('pbi-resize-load-txt')},{state:'ready',text:button.getAttribute('pbi-resize-rdy-txt')},{state:'readynow',text:button.getAttribute('pbi-resize-load-txt')}]
+var text='';for(var i=0;i<states.length;i++){if(states[i].state===state){text=states[i].text}}
+var spinner=getChildByTag(button,'span');button.innerHTML=text+spinner.outerHTML;switch(state){case 'loading':button.onclick=function(){setButtonState(button,'loadingnow')}
+button.parentNode.onclick=function(){setButtonState(button,'loadingnow')}
+break;case 'readynow':resize();var iframe=getChildByTag(button.parentNode,'iframe');showElement(iframe)
+break;case 'ready':resize();var spinner=getChildByTag(button,'span');spinner.style.display='none';button.style.width='auto';button.onclick=function(e){var iframe=getChildByTag(e.target.parentNode,'iframe');showElement(iframe)}
+button.parentNode.onclick=function(e){var iframe=getChildByTag(e.target.parentNode,'iframe');showElement(iframe)}
+break}}
+var e=function(){for(var e=document.querySelectorAll('[pbi-resize="powerbi"]'),i=0;i<e.length;i++){e[i].style.width='100%';var actualWidth=e[i].clientWidth;var contentMinWidth=e[i].getAttribute("pbi-resize-min-width");var height=e[i].getAttribute('height');var webImg=e[i].getAttribute('pbi-resize-img');var mobileImg=e[i].getAttribute('pbi-resize-m-img')||webImg;var webWidth=e[i].getAttribute("pbi-resize-width");var webHeight=e[i].getAttribute("pbi-resize-height");var webSrc=e[i].getAttribute("pbi-resize-src");var mobileWidth=e[i].getAttribute("pbi-resize-m-width");var mobileHeight=e[i].getAttribute("pbi-resize-m-height");var mobileSrc=e[i].getAttribute("pbi-resize-m-src");var loadEvent=e[i].getAttribute('pbi-resize-load-event');var header=e[i].getAttribute('pbi-resize-header');var img=getChildByTag(e[i],'img');var iframe=getChildByTag(e[i],'iframe');var currentSrc=iframe?iframe.getAttribute('src'):null;var mobileRatio=mobileWidth/mobileHeight;var webRatio=webWidth/webHeight;var isWebSize=actualWidth>contentMinWidth;var newSrc=!(webSrc&&mobileSrc)?webSrc:(isWebSize?webSrc:mobileSrc);var resizedToWeb=((iframe&&iframe.src==mobileSrc)||(img&&img.src==mobileImg))&&isWebSize&&mobileSrc!=webSrc;var resizedToMobile=((iframe&&iframe.src==webSrc)||(img&&img.src==webImg))&&!isWebSize&&mobileSrc!=webSrc;var currentSrcIsImage=e[i].children.length>1?!0:!1;if(!currentSrc){if(iframe){iframe.style.position='absolute';iframe.style.top=0;iframe.style.left=0;iframe.style.visibility='hidden'}
+if(img){img.setAttribute('src',(!isWebSize&&mobileImg)?mobileImg:webImg)}
+if((!webImg&&webSrc&&isWebSize)||(!mobileImg&&mobileSrc&&!isWebSize)){iframe.setAttribute('src',(!isWebSize&&mobileSrc)?mobileSrc:webSrc);showElement(iframe);resize();break}else if((webImg&&webSrc)||(mobileImg&&mobileSrc)){var button=getChildByTag(e[i],'div');setButtonState(button,'waiting');switch(loadEvent){case 'page-load':loadIframe(iframe.parentNode,newSrc);break;case 'seconds-timeout':var timeout=parseInt(e[i].getAttribute('pbi-resize-seconds'))*1000;t=setTimeout(function(){loadIframe(iframe.parentNode,newSrc)},timeout);break;case 'in-view':if(currentSrcIsImage&&!iframe.src&&isInViewport(img)){loadIframe(iframe.parentNode,newSrc)}
+window.addEventListener('scroll',function(){if(currentSrcIsImage&&!iframe.src&&isInViewport(img)){loadIframe(iframe.parentNode,newSrc)}},!1);break;case 'click':button.onclick=function(){loadIframe(iframe.parentNode,newSrc)}
+e[i].firstChild.onclick=function(){loadIframe(iframe.parentNode,newSrc)}
+break}}}
+if((currentSrc==webImg&&!webImg&&webSrc&&isWebSize)||(currentSrc==mobileImg&&!mobileImg&&mobileSrc&&!isWebSize)){showElement(iframe)}
+else if(resizedToMobile||resizedToWeb){changeCurrentSrc(e[i].children[0],isWebSize,currentSrcIsImage?webImg:webSrc,currentSrcIsImage?mobileImg:mobileSrc,newSrc)}
+if(currentSrcIsImage&&((resizedToMobile&&!mobileImg&&mobileSrc)||(resizedToWeb&&!webImg&&webSrc))){showElement(iframe)}
+else if(!currentSrcIsImage&&((resizedToMobile&&mobileImg&&!mobileSrc)||(resizedToWeb&&webImg&&!webSrc))){showElement(iframe)}
+if(img&&img.parentNode){resizeElement(img,header,actualWidth,isWebSize,webRatio,mobileRatio,webHeight,mobileHeight)}
+if(iframe){resizeElement(iframe,header,actualWidth,isWebSize,webRatio,mobileRatio,webHeight,mobileHeight)}}};function resizeElement(element,header,actualWidth,isWebSize,webRatio,mobileRatio,webHeight,mobileHeight){var warn=!1;if(mobileRatio&&mobileHeight){var pageSize=isWebSize?webRatio:mobileRatio;var pageHeight=isWebSize?webHeight:mobileHeight}
+else{var pageSize=webRatio;var pageHeight=webHeight}
+var p169=16.0/9.0;var p43=4.0/3.0;var heightOffset=header.toLowerCase()=="true"?36:56;if(actualWidth<569&&pageSize===p169){element.parentNode.style.width="568.88px";element.style.width="568.88px";element.style.height=320+heightOffset+"px";warn=!0}
+else if(actualWidth<=437&&pageSize===p43){element.parentNode.style.width="426.66px";element.style.width="426.66px";element.style.height=320+heightOffset+"px";warn=!0}
+else if(actualWidth<320||actualWidth/pageSize<320||(pageHeight<320&&pageSize!==p169&&pageSize!==p43)){var height=Math.max(actualWidth,320)/pageSize;if(height<320){element.parentNode.style.width=320*pageSize+"px";element.style.width=320*pageSize+"px";element.style.height=320+heightOffset+"px"}
+else if(actualWidth<320){element.parentNode.style.width=320+"px";element.style.width=320+"px";element.style.height=height+heightOffset+"px"}
+else{element.parentNode.style.width=actualWidth+"px";element.style.width=actualWidth+"px";element.style.height=height+heightOffset+"px"}
+warn=!0}
+else{element.parentNode.style.width="100%";element.style.width="100%";element.style.height=Math.max(element.clientWidth/pageSize,320)+heightOffset+"px"}
+if(warn){console.warn("pbi-resize: requested iframe dimension is below the minimum supported dimensions. Minimum supported width is 320px. Minimum supported height is 376px. Change your Power BI report page size to ensure your content looks great when embedded in your web page or blog.")}}
+document.addEventListener("DOMContentLoaded",e);window.addEventListener("resize",e);window.addEventListener("orientationchange",e);function isInViewport(e){var bounding=e.getBoundingClientRect();return(bounding.top>=0&&bounding.left>=0&&bounding.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&bounding.right<=(window.innerWidth||document.documentElement.clientWidth))};function changeCurrentSrc(e,isWebSize,web,mobile,newSrc){if(web&&mobile){var iframe=e.nextElementSibling;if(e instanceof HTMLImageElement&&iframe.src&&(newSrc!=iframe.src)){iframe.setAttribute('src',newSrc);setButtonState(iframe.nextElementSibling,'loading')}
+var currentSrc=isWebSize?web:mobile;e.setAttribute('src',currentSrc)}}
+function resize(){if(navigator.userAgent.indexOf('MSIE')!==-1||navigator.appVersion.indexOf('Trident/')>0){var evt=document.createEvent('UIEvents');evt.initUIEvent('resize',!0,!1,window,0);window.dispatchEvent(evt)}else{window.dispatchEvent(new Event('resize'))}}
+function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var button=getChildByTag(parent,'div');var spinner=getChildByTag(button,'span');spinner.style.display='block';var style=document.createElement('style');style.type='text/css';var keyFrames='@keyframes pbi-resize-spinner {\
+                0% {\
+                    transform: rotate(0deg);\
+                }\
+                100% {\
+                    transform: rotate(360deg);\
+                }\
+            }';style.innerHTML=keyFrames;document.getElementsByTagName('head')[0].appendChild(style);iframe.setAttribute('src',src);iframe.setAttribute('frameborder','0');iframe.setAttribute('allowFullScreen','true');setButtonState(button,'loading')}}}();
+</script>
+
+
+
+
+    
+</div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+
+        <div class="content has-text-centered">
+            <p class=""><b>INTEGRATION:</b>  Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition
+                by <a href="https://www.uliege.be/"> <br> ULiège </a> & <a href="https://www.fluxys.com/">Fluxys</a>.</p>
+            <p class=""> Funded by <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition"><b>Energy Transition Fund of the Belgian federal government</b></a></p>
+        </div>
+
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/" class="link">Home</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/methodology/" class="link">Methodology</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/system/" class="link">System</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Base Case</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulation/" class="link">Sensitivities</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/simulations/base_case/" class="link">Interactive&nbsp;Results</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/navigate/" class="link">How to Navigate</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/website_test/about/" class="link">About</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+
+    
+    <script src="/website_test/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>

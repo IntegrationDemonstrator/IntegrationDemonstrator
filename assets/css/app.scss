@@ -1,0 +1,16 @@
+---
+---
+$primary: #0091ff;
+
+$footer-background-color: #f3f3f3;
+
+html {
+    text-align: justify;
+
+    .table-container{
+        text-align: left;
+    }
+}
+
+// Import Main CSS file from theme
+@import "main";

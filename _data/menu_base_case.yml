@@ -1,0 +1,25 @@
+- label:
+  items:
+  - name: Key Results
+    link: /simulations/base_case/
+    icon: fa-key
+- label: Analyses
+  items:
+    - name: Energy Balances
+      link: /simulations/base_case/energy_balance/
+      icon: fa-balance-scale-right
+    - name: Capacities
+      link: /simulations/base_case/capacities/
+      icon: fa-ruler
+    - name: CO&#8322; Balance
+      link: /simulations/base_case/carbon_balance/
+      icon: fa-balance-scale-left
+    - name: Cost Overview
+      link: /simulations/base_case/cost_of_energy_system/
+      icon: fa-euro-sign
+    - name: Energy Storage
+      link: /simulations/base_case/energy_storage/
+      icon: fa-warehouse
+    - name: Marginal Costs
+      link: /simulations/base_case/marginal_cost_of_commodities/
+      icon: fa-coins

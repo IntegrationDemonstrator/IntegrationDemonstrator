@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% if page.toc %}
+    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
+{% endif %}
+<div class="content">
+    {{ content }}
+
+
+    {% if page.left_link or  page.right_link %}
+        <div class="columns is-mobile">
+            <div class="column">
+                {% if page.left_link %}
+                    <div class="buttons">
+                        <a class="button is-link" href="{{ page.left_link | relative_url }}">
+                            <span class="icon"><i class="fas fa-arrow-left"></i></span>
+                            <span>{{ page.left_link_name }}</span>
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="column is-right">
+                {% if page.right_link %}
+                    <div class="buttons is-right">
+                        <a class="button is-link" href="{{ page.right_link | relative_url }}">
+                            <span>{{ page.right_link_name }}</span>
+                            <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+</div>

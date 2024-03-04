@@ -1,0 +1,48 @@
+intro: |-
+  Before diving futher you should have a look at the [Base Case](../simulations/base_case). Sensitivities are carried out by changing some parameters of the Base Case and analysing how the optimal energy system is changing. In order to analyse the impact of a single parameter, simulations are carried out with several values of that parameter to detect when changes take place, e.g. production and conversion capacity, load factor of conversion facilities, import flows… Here is an overview of the different scenarios considered and their analysis.
+items:
+
+  - title: High Renewable
+    subtitle: Belgian system with a potential of 103.3 GW of solar PV, 20.5 GW of onshore wind and 9.3 GW of offshore wind
+    description: |-
+      The potential of solar PV, onshore and offshore wind is increased in order to test how much variable renewable energy sources can be integrated into the Belgian energy system on an optimal way. The full potential of onshore wind (9.3 GW) and offshore wind (20.5 GW) is deployed, but not the full potential of solar PV, as in the Base Case. Consequently more hydrogen is produced from offshore wind and less gas is used to produce electricity. However most hydrogen remains imported because green electricity is preferably used as electricity.
+    image: img/highrenewable.png
+    image_ratio: is-16
+    link: ../simulations/high_renewable/
+    link_text: Learn More
+
+  - title: "Farther Offshore Wind : 40 to 1000 km"
+    subtitle: Belgian system with offshore wind located 1000 km from the shore
+    description: |-
+      The distance of offshore wind is artificially increased to detect when it is more interesting to produce hydrogen offshore rather than transporting it as electricity. Indeed as transporting is cheaper than electricity, from a certain distance hydrogen production offshore increases but if the distance becomes too long, hydrogen from offshore wind becomes more costly than hydrogen imports.
+    image: img/fartheroffshore.png
+    image_ratio: is-16
+    link: ../simulations/offshore_far/
+    link_text: Learn More
+
+  - title: "CO<sub>2</sub> Budget : 0 to 20% of 1990 CO<sub>2</sub> emissions"
+    subtitle: Belgian system with a carbon budget of 20% of the 1990 emissions
+    description: |-
+      The Base Case assumes a net-zero energy system by 2050. But the Belgian energy system is integrated within the European energy market and the decarbonisation cost may be different across countries. Therefore, some countries have net-positive emissions, while other have net-negative emissions in an optimal EU energy system. If some CO<sub>2</sub> emissions are allowed for Belgium in 2050, the optimal energy system in Belgium is cheaper and less CO<sub>2</sub> is captured and exported.
+    image: img/co2budget.png
+    image_ratio: is-16
+    link: ../simulations/carbon_budget/
+    link_text: Learn More
+
+  - title: "H<sub>2</sub> Import Cost : €75 to 300/MWh"
+    subtitle: Belgian system with a higher H<sub>2</sub> import cost of €300/MWh
+    description: |-
+      Hydrogen can be produced in Belgium by electrolysis (green hydrogen) or using Steam Methane Reforming (SMR) or imported. The cost of importing hydrogen impacts the trade-off between imports and domestic production. If the H<sub>2</sub> import cost increases, more H<sub>2</sub> is produced in Belgium, but the limited production of green electricity forces the energy system to be balanced with hydrogen production from SMRs. This increases the need for carbon capture capacity and exports.
+    image: img/h2import.png
+    image_ratio: is-16
+    link: ../simulations/h2_import/
+    link_text: Learn More
+
+  - title: "CO<sub>2</sub> Export Capacity : 3.5 down to 0 kt/h"
+    subtitle: Belgian system with a CO<sub>2</sub> export capacity of 0
+    description: |-
+      The capacity to export CO<sub>2</sub> by pipeline strongly impacts the deployment of renewable electricity in Belgium’s net-zero energy system in 2050. When this capacity decreases, less CO<sub>2</sub> emissions is allowed, so that CCGTs are less used and more electricity is imported. In the extreme case shown above, no CO<sub>2</sub> can be exported, CCGTs are seldom used and the captured CO<sub>2</sub> is even used in methanation facilities to produced CH4 needed for final demand.
+    image: img/co2export.png
+    image_ratio: is-16
+    link: ../simulations/carbon_export/
+    link_text: Learn More
