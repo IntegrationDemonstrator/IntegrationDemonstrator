@@ -71,47 +71,50 @@ Offshore wind, onshore wind and solar PV produce 73.31 TWh of electricity annual
 
 <div class="table-container"  markdown="1">
 
-|                        | Total production (TWh)  | Curtailment (TWh) | Capacity factor (%) | Usage Factor (%) | Hours of curtailment |
+|                        | Total production (TWh)* | Curtailment (TWh) | Capacity factor (%) | Usage Factor (%) | Hours of curtailment |
 |------------------------|-------------------------|-------------------|---------------------|------------------|----------------------|
-| Photovoltaic panels    | 28.73                   | 0.5               | 11.58               | 98.3             | 210                  |
-| Onshore wind turbines  | 17.79                   | 0.47              | 22.57               | 97.43            | 405                  |
-| Offshore wind turbines | 26.79                   | 2.15              | 38.22               | 92.57            | 727                  |
+| Photovoltaic panels    | 28.8                    | 0.5               | 11.6                | 98.3             | 210                  |
+| Onshore wind turbines  | 17.8                    | 0.5               | 22.6                | 97.4             | 405                  |
+| Offshore wind turbines | 26.8                    | 2.2               | 38.2                | 92.6             | 727                  |
 
 </div>
+(* After curtailment > available in the energy system.)
 
-Despite the capacities installed, renewable technologies never produce at their maximum capacity simultaneously. The peak combined production over an hour reaches 32.98 GW: 18.83 GW for PVs, 7 GW for offshore wind turbines and 7.15 GW for onshore wind turbines, taking curtailment into account.
+Despite the capacities installed, renewable technologies never produce at their maximum capacity simultaneously. The peak combined production over an hour reaches 33.0 GW: 18.83 GW for PVs, 7 GW for offshore wind turbines and 7.2 GW for onshore wind turbines, taking curtailment into account.
 
-CCGT is the only carbon-emitting dispatchable technology installed in the optimal system. CCGT plants produce 61.32 TWh of electricity, resulting in a capacity factor of 58.8 %.
+CCGT is the only carbon-emitting dispatchable technology installed in the optimal system. CCGT plants produce 61.3 TWh of electricity, resulting in a capacity factor of 58.8 %.
 
-PCCCs capture most of the CO<sub>2</sub> emitted by CCGTs, which requires 7.46 TWh of electricity. Subtracting this consumption from electricity produced by CCGTs, results in a net production of 53.86 TWh of electricity. PCCCs are installed at 97% of the CCGT capacity.
+PCCCs capture most of the CO<sub>2</sub> emitted by CCGTs, which requires 7.5 TWh of electricity. Subtracting this consumption from electricity produced by CCGTs, results in a net production of 53.9 TWh of electricity. PCCCs are installed at 97% of the CCGT capacity.
 
 Electricity consumption for the capture of CO<sub>2</sub> and for electrolysis reach their highest values between May and August. It follows that electricity produced by solar PVs are the main source of electricity for DAC and electrolysers and that DAC is used mainly when electricity demand is lower.
 
-The hydrogen demand of 77.68 TWh is mostly imported: only 1.71 TWh is produced in Belgium in the COASTAL cluster.
+The hydrogen demand of 77.7 TWh is mostly imported: only 1.71 TWh is produced in Belgium in the COASTAL cluster.
 
-The demand for methane is mostly used for power in CCGTs (102.21 TWh) and in final energy demand (19.59 TWh). The full potential of biomethane production in Belgium is installed (14.08 TWh) and the rest is imported (107.78 TWh). A limited storage capacity is deployed.
+The demand for methane is mostly used for power in CCGTs (102.2 TWh) and in final energy demand (19.6 TWh). The full potential of biomethane production in Belgium is installed (14.1 TWh) and the rest is imported (107.8 TWh). The existing storage capacity (8000 TWh) is only partly used to store 13 TWh over a year.
 
-In total, 16.74 TWh of electricity, 75.97 TWh of hydrogen and 107.77 TWh of natural gas are imported. The next table shows the amount of energy imported or exported and the peak value of the energy imported or exported for each import and export node and neighbour country clusters.
+In total, 16.7 TWh of electricity, 76.0 TWh of hydrogen and 107.8 TWh of natural gas are imported. The next table shows the amount of energy imported or exported and the peak value of the energy imported (positive values) or exported (negative values) for each import and export node and neighbour country clusters.
+
+[To do: check positive and negative values???]
 
 <div class="table-container" markdown="1">
 
-|                                    | Preinstalled capacity &kappa;<sup>n</sup> | Total energy q<sup>n<sub>i</sub></sup> | Peak power q<sup>n<sub>i</sub></sup> |
-|------------------------------------|-------------------------------------------|----------------------------------------|--------------------------------------|
-|                                    | (GW or kt/h)                              | (TWh or Mt)                            | (GW or kt/h)                         |
-| INL Elec Denmark                   | 2.00                                      | 0.92                                   | 0.38                                 |
-| INL Elec United Kingdom            | 2.40                                      | 4.75                                   | 2.40                                 |
-| INL Elec Luxembourg                | 1.00                                      | 0.01                                   | 0.01                                 |
-| INL Elec France                    | 8.30                                      | 5.53                                   | 5.43                                 |
-| INL Elec Netherlands               | 5.40                                      | 2.17                                   | 1.05                                 |
-| INL Elec Germany                   | 1.00                                      | 3.36                                   | 1.00                                 |
-| INL H<sub>2</sub> Netherlands      | 25.65                                     | 75.97                                  | 12.28                                |
-| COA CH<sub>4</sub>  Norway         | 18.35                                     | 0.00                                   | 0.00                                 |
-| COA CH<sub>4</sub>  United Kingdom | 24.50                                     | 0.00                                   | 0.00                                 |
-| COA CH<sub>4</sub> France          | 9.37                                      | 78.77                                  | 9.37                                 |
-| COA CH<sub>4</sub>  North Africa   | 26.81                                     | 0.00                                   | 0.00                                 |
-| INL CH<sub>4</sub>  Germany        | 15.06                                     | 29.00                                  | 15.06                                |
-| INL CO<sub>2</sub> Norway          | 3.50                                      | 21.76                                  | 3.26                                 |
+|                                    | Installed capacity | Total energy | Peak power q<sup>n<sub>i</sub></sup> |
+|------------------------------------|--------------------|--------------|--------------------------------------|
+|                                    | (GW or kt/h)       | (TWh or Mt)  | (GW or kt/h)                         |
+| INL Elec Denmark                   | +2.0               | +0.9         | +0.4                                 |
+| INL Elec United Kingdom            | +2.4               | +4.8         | +2.4                                 |
+| INL Elec Luxembourg                | 1.0                | 0.0          | +0.0                                 |
+| INL Elec France                    | +8.3               | +5.5         | +5.4                                 |
+| INL Elec Netherlands               | +5.4               | +2.2         | +1.1                                 |
+| INL Elec Germany                   | +1.0               | +3.4         | +1.0                                 |
+| INL H<sub>2</sub> Netherlands      | +25.7              | +76.0        | +12.3                                |
+| COA CH<sub>4</sub>  Norway         | +18.4              | +0.0         | +0.0                                 |
+| COA CH<sub>4</sub>  United Kingdom | +24.5              | +0.0         | +0.0                                 |
+| COA CH<sub>4</sub> France          | +9.4               | +78.8        | +9.4                                 |
+| COA CH<sub>4</sub>  North Africa   | +26.8              | +0.0         | +0.0                                 |
+| INL CH<sub>4</sub>  Germany        | +15.1              | +29.0        | +15.1                                |
+| INL CO<sub>2</sub> Norway          | -3.5               | -21.8        | -3.3                                 |
 
 </div>
 
-Electricity is imported from the United Kingdom, France and Germany, with 4.75, 5.53 and 3.36 TWh respectively. France and the United Kingdom are exporting nuclear power massively during winter. Germany has the most renewable technologies installed, leading to high exports of energy with production exceeds demand. Small amounts of electricity is imported from Denmark, the Netherlands and Germany.
+Electricity is imported from the United Kingdom, France and Germany, with 4.8, 5.6 and 3.4 TWh respectively. France and the United Kingdom are exporting nuclear power massively during winter. Germany has the most renewable technologies installed, leading to high exports of energy when production exceeds demand. Small amounts of electricity are imported from Denmark, the Netherlands and Germany.

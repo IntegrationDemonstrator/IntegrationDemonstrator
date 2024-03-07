@@ -69,8 +69,11 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
 
 The methodology provides another interesting output: a commodity price for each energy carrier (electricity, methane, hydrogen) that represents the marginal cost of production for every hour. It is possible to identify the marginal technology for every hour. This reflects the functioning of a perfect market.
 
-The average marginal cost of electricity is €107.57/MWh. It is the most volatile commodity. As the marginal production technology switches from solar PV to wind onshore/offshore to CCGTs, the hourly cost changes accordingly. If demand cannot be served, the price rises to €3000/MWh.
+The average marginal cost of electricity is €107.6/MWh. It is the most volatile commodity and its value changes hour by hour when the marginal technology changes in the electricity supply curve. As the marginal production technology switches from solar PV to wind onshore/offshore to CCGTs, the hourly cost changes accordingly. If demand cannot be served, the price rises to €3000/MWh.
 
-The average marginal cost of hydrogen is €73.17/MWh, driven by the fixed import cost of €75/MWh.
+The average marginal cost of hydrogen is €73.2/MWh, driven by the fixed import cost of €75/MWh.
 
 The average marginal cost of methane is €50.43/MWh, driven by the fixed import cost of €40/MWh.
+[To check if CO2 costs are reallocated between technologies???]
+
+The marginal CO2 abatement cost is 126.59 €. [Looks too high: to check if CO2 costs should be reallocated between technologies???]

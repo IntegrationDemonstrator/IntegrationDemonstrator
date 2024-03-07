@@ -67,36 +67,16 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
 </script>
 
 
-The total cost of the energy system is €20.39 billion per year, or €89.34/MWh on average. That includes capital expenses (CAPEX), fixed operations & maintenance (FOM) and variable operations & maintenance (VOM) costs.
+The total cost of the energy system is €20.7 billion per year, or €91.16/MWh on average. That includes capital expenses (CAPEX), fixed operations & maintenance (FOM) and variable operations & maintenance (VOM) costs.
 
-The total cost for the electricity system is €7.17 billion per year, or €[x]/MWh. The most expensive technologies by annualized cost are:
+The total cost of the electricity system is €7.6 billion per year, or €58.8/MWh of final demand on average. The most expensive technologies by annualized cost are solar PV, wind offshore, CCGTs, wind onshore and batteries.
 
+However, electricity is also used to power PCCCs and DACs and as feedstock for electrolysers. If the total cost of the electricity system is compared to the system demand (158.3 TWh, of which 129.4 TWh of final demand), the commodity cost amounts to €48.1/MWh on average.
 
-<div class="table-container"  markdown="1">
+The total cost of the hydrogen system is €5.7 billion per year, or €73.8/MWh on average. This is mainly due to H<sub>2</sub> imports from the Netherlands at a fixed cost of  €75/MWh. Electrolysis plants represent only a cost of €0.03 billion per year. As the hydrogen system is only used to supply final demand, the commodity cost remains at €73.8/MWh.
 
-|               | Cost (€ billion per year) | 
-|---------------|---------------------------|
-| Solar PV      | 1.85                      |
-| Wind offshore | 1.64                      | 
-| CCGTs         | 1.00                      |
-| Wind onshore  | 0.94                      |
-| Batteries     | 0.54                      |
+The total cost of the methane system is €6.6 billion per year, or €336.5/MWh of the final demand on average. This is mainly due to CH4 imports, at a fixed cost of €40/MWh. The production of biomethane costs amounts for €0.6 billion per year.
 
-</div>
+However, methane is mostly used as feedstock for CCGTs. If the total cost of the methane system is compared to the system demand (134.9 TWh, of which 19.6 TWh of final demand), the commodity cost amounts to €48.9/MWh, clost to the import cost of €40/MWh.
 
-The total cost for the hydrogen system is €5.73 billion per year, or €[x]/MWh on average. This is mainly due to H<sub>2</sub> imports from the Netherlands at a fixed cost of  €75/MWh. Electrolysis plants represent only a cost of €0.03 billion per year.
-
-The total cost for the methane system is €7.79 billion per year, or €[x]/MWh on average. This is mainly due to CH4 imports, at a fixed cost of €40/MWh. The production of biomethane costs €[x] billion per year.
-
-The total cost of the CO<sub>2</sub> system is €1.25 billion per year, Or €[x]/tCO<sub>2</sub>. The most expensive technologies by annualized cost are:
-
-
-<div class="table-container"  markdown="1">
-
-|                       | Cost (€ billion per year) | 
-|-----------------------|---------------------------|
-| PCCC of CCGTs         | 0.95                      |
-| DAC                   | 0.25                      | 
-| CO<sub>2</sub> export | 0.04                      |
-
-</div>
+The total cost of the CO<sub>2</sub> system is €0.7 billion per year, or €29.6/tCO<sub>2</sub>. If we compare it with the CO2  system demand of 24.61 Mt of CO2, the most expensive technologies by annualized cost are PCCCs (of CCGTs), DACs. [To check completely: I think there is a misallocation of costs between the CH4 and CO2 systems???]

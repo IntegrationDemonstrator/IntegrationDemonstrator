@@ -370,7 +370,7 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
     <thead>
       <tr>
         <th> </th>
-        <th>Total production (TWh)</th>
+        <th>Total production (TWh)*</th>
         <th>Curtailment (TWh)</th>
         <th>Capacity factor (%)</th>
         <th>Usage Factor (%)</th>
@@ -380,46 +380,49 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
     <tbody>
       <tr>
         <td>Photovoltaic panels</td>
-        <td>28.73</td>
+        <td>28.8</td>
         <td>0.5</td>
-        <td>11.58</td>
+        <td>11.6</td>
         <td>98.3</td>
         <td>210</td>
       </tr>
       <tr>
         <td>Onshore wind turbines</td>
-        <td>17.79</td>
-        <td>0.47</td>
-        <td>22.57</td>
-        <td>97.43</td>
+        <td>17.8</td>
+        <td>0.5</td>
+        <td>22.6</td>
+        <td>97.4</td>
         <td>405</td>
       </tr>
       <tr>
         <td>Offshore wind turbines</td>
-        <td>26.79</td>
-        <td>2.15</td>
-        <td>38.22</td>
-        <td>92.57</td>
+        <td>26.8</td>
+        <td>2.2</td>
+        <td>38.2</td>
+        <td>92.6</td>
         <td>727</td>
       </tr>
     </tbody>
   </table>
 
 </div>
+<p>(* After curtailment &gt; available in the energy system.)</p>
 
-<p>Despite the capacities installed, renewable technologies never produce at their maximum capacity simultaneously. The peak combined production over an hour reaches 32.98 GW: 18.83 GW for PVs, 7 GW for offshore wind turbines and 7.15 GW for onshore wind turbines, taking curtailment into account.</p>
+<p>Despite the capacities installed, renewable technologies never produce at their maximum capacity simultaneously. The peak combined production over an hour reaches 33.0 GW: 18.83 GW for PVs, 7 GW for offshore wind turbines and 7.2 GW for onshore wind turbines, taking curtailment into account.</p>
 
-<p>CCGT is the only carbon-emitting dispatchable technology installed in the optimal system. CCGT plants produce 61.32 TWh of electricity, resulting in a capacity factor of 58.8 %.</p>
+<p>CCGT is the only carbon-emitting dispatchable technology installed in the optimal system. CCGT plants produce 61.3 TWh of electricity, resulting in a capacity factor of 58.8 %.</p>
 
-<p>PCCCs capture most of the CO<sub>2</sub> emitted by CCGTs, which requires 7.46 TWh of electricity. Subtracting this consumption from electricity produced by CCGTs, results in a net production of 53.86 TWh of electricity. PCCCs are installed at 97% of the CCGT capacity.</p>
+<p>PCCCs capture most of the CO<sub>2</sub> emitted by CCGTs, which requires 7.5 TWh of electricity. Subtracting this consumption from electricity produced by CCGTs, results in a net production of 53.9 TWh of electricity. PCCCs are installed at 97% of the CCGT capacity.</p>
 
 <p>Electricity consumption for the capture of CO<sub>2</sub> and for electrolysis reach their highest values between May and August. It follows that electricity produced by solar PVs are the main source of electricity for DAC and electrolysers and that DAC is used mainly when electricity demand is lower.</p>
 
-<p>The hydrogen demand of 77.68 TWh is mostly imported: only 1.71 TWh is produced in Belgium in the COASTAL cluster.</p>
+<p>The hydrogen demand of 77.7 TWh is mostly imported: only 1.71 TWh is produced in Belgium in the COASTAL cluster.</p>
 
-<p>The demand for methane is mostly used for power in CCGTs (102.21 TWh) and in final energy demand (19.59 TWh). The full potential of biomethane production in Belgium is installed (14.08 TWh) and the rest is imported (107.78 TWh). A limited storage capacity is deployed.</p>
+<p>The demand for methane is mostly used for power in CCGTs (102.2 TWh) and in final energy demand (19.6 TWh). The full potential of biomethane production in Belgium is installed (14.1 TWh) and the rest is imported (107.8 TWh). The existing storage capacity (8000 TWh) is only partly used to store 13 TWh over a year.</p>
 
-<p>In total, 16.74 TWh of electricity, 75.97 TWh of hydrogen and 107.77 TWh of natural gas are imported. The next table shows the amount of energy imported or exported and the peak value of the energy imported or exported for each import and export node and neighbour country clusters.</p>
+<p>In total, 16.7 TWh of electricity, 76.0 TWh of hydrogen and 107.8 TWh of natural gas are imported. The next table shows the amount of energy imported or exported and the peak value of the energy imported (positive values) or exported (negative values) for each import and export node and neighbour country clusters.</p>
+
+<p>[To do: check positive and negative values???]</p>
 
 <div class="table-container">
 
@@ -427,8 +430,8 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
     <thead>
       <tr>
         <th> </th>
-        <th>Preinstalled capacity κ<sup>n</sup></th>
-        <th>Total energy q<sup>n<sub>i</sub></sup></th>
+        <th>Installed capacity</th>
+        <th>Total energy</th>
         <th>Peak power q<sup>n<sub>i</sub></sup></th>
       </tr>
     </thead>
@@ -441,88 +444,88 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
       </tr>
       <tr>
         <td>INL Elec Denmark</td>
-        <td>2.00</td>
-        <td>0.92</td>
-        <td>0.38</td>
+        <td>+2.0</td>
+        <td>+0.9</td>
+        <td>+0.4</td>
       </tr>
       <tr>
         <td>INL Elec United Kingdom</td>
-        <td>2.40</td>
-        <td>4.75</td>
-        <td>2.40</td>
+        <td>+2.4</td>
+        <td>+4.8</td>
+        <td>+2.4</td>
       </tr>
       <tr>
         <td>INL Elec Luxembourg</td>
-        <td>1.00</td>
-        <td>0.01</td>
-        <td>0.01</td>
+        <td>1.0</td>
+        <td>0.0</td>
+        <td>+0.0</td>
       </tr>
       <tr>
         <td>INL Elec France</td>
-        <td>8.30</td>
-        <td>5.53</td>
-        <td>5.43</td>
+        <td>+8.3</td>
+        <td>+5.5</td>
+        <td>+5.4</td>
       </tr>
       <tr>
         <td>INL Elec Netherlands</td>
-        <td>5.40</td>
-        <td>2.17</td>
-        <td>1.05</td>
+        <td>+5.4</td>
+        <td>+2.2</td>
+        <td>+1.1</td>
       </tr>
       <tr>
         <td>INL Elec Germany</td>
-        <td>1.00</td>
-        <td>3.36</td>
-        <td>1.00</td>
+        <td>+1.0</td>
+        <td>+3.4</td>
+        <td>+1.0</td>
       </tr>
       <tr>
         <td>INL H<sub>2</sub> Netherlands</td>
-        <td>25.65</td>
-        <td>75.97</td>
-        <td>12.28</td>
+        <td>+25.7</td>
+        <td>+76.0</td>
+        <td>+12.3</td>
       </tr>
       <tr>
         <td>COA CH<sub>4</sub>  Norway</td>
-        <td>18.35</td>
-        <td>0.00</td>
-        <td>0.00</td>
+        <td>+18.4</td>
+        <td>+0.0</td>
+        <td>+0.0</td>
       </tr>
       <tr>
         <td>COA CH<sub>4</sub>  United Kingdom</td>
-        <td>24.50</td>
-        <td>0.00</td>
-        <td>0.00</td>
+        <td>+24.5</td>
+        <td>+0.0</td>
+        <td>+0.0</td>
       </tr>
       <tr>
         <td>COA CH<sub>4</sub> France</td>
-        <td>9.37</td>
-        <td>78.77</td>
-        <td>9.37</td>
+        <td>+9.4</td>
+        <td>+78.8</td>
+        <td>+9.4</td>
       </tr>
       <tr>
         <td>COA CH<sub>4</sub>  North Africa</td>
-        <td>26.81</td>
-        <td>0.00</td>
-        <td>0.00</td>
+        <td>+26.8</td>
+        <td>+0.0</td>
+        <td>+0.0</td>
       </tr>
       <tr>
         <td>INL CH<sub>4</sub>  Germany</td>
-        <td>15.06</td>
-        <td>29.00</td>
-        <td>15.06</td>
+        <td>+15.1</td>
+        <td>+29.0</td>
+        <td>+15.1</td>
       </tr>
       <tr>
         <td>INL CO<sub>2</sub> Norway</td>
-        <td>3.50</td>
-        <td>21.76</td>
-        <td>3.26</td>
+        <td>-3.5</td>
+        <td>-21.8</td>
+        <td>-3.3</td>
       </tr>
     </tbody>
   </table>
 
 </div>
 
-<p>Electricity is imported from the United Kingdom, France and Germany, with 4.75, 5.53 and 3.36 TWh respectively. France and the United Kingdom are exporting nuclear power massively during winter. Germany has the most renewable technologies installed, leading to high exports of energy with production exceeds demand. Small amounts of electricity is imported from Denmark, the Netherlands and Germany.</p>
+<p>Electricity is imported from the United Kingdom, France and Germany, with 4.8, 5.6 and 3.4 TWh respectively. France and the United Kingdom are exporting nuclear power massively during winter. Germany has the most renewable technologies installed, leading to high exports of energy when production exceeds demand. Small amounts of electricity are imported from Denmark, the Netherlands and Germany.</p>
 
 
 

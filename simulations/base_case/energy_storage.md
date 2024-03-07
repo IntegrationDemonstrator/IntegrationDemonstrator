@@ -69,13 +69,13 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
 
 The OFFSHORE cluster is equipped with 1.14 GWh of batteries (0.13 GW of charge capacity and 0.75 GW of discharge capacity) to smooth offshore wind production. A significant amount of batteries is installed in the COASTAL cluster (10.36 GWh, 1.16 GW of charge capacity and 6.98 GW of discharge capacity) and in the INLAND cluster (16.25 GWh, 1.47 GW of charge capacity and 8.81 GW of discharge capacity). Note that for this model, a battery with a discharge-to-charge ratio of 6 is used.
 
-All batteries are highly used: the number of full cycles per year is respectively 147, 153 and 170 in the OFFSHORE, COASTAL and INLAND clusters.
+All batteries are highly used: the number of full cycles per year is respectively 147, 153 and 170 for batteries in the OFFSHORE, COASTAL and INLAND clusters.
 
 Batteries are optimised along several usages:
 - to smooth offshore wind electricity during its peak production;
 - to smooth offshore wind electricity when electricity produced in the INLAND cluster exceeds the consumption;
-- to smooth solar PV production in the INLAND cluster;
-- during spring and summer, to store in the COASTAL cluster a part of the electrical energy from solar PV production from the INLAND cluster.
+- to smooth onshore wind and solar PV electricity during its peak production in the INLAND cluster;
+- during spring and summer, to store in the COASTAL cluster part of the electricity from onshore wind and solar PV production in the INLAND cluster.
 
 The balanced installation of batteries in the COASTAL and INLAND clusters shows clearly optimisation opportunities of an integrated energy system: thanks to interconnection capacity, they help balance the electricity system in a variety of supply and demand configurations.
 
