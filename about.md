@@ -32,7 +32,7 @@ INTEGRATION stands for “**INT**eraction **E**lectricité, **G**az et autres **
   </div>
   <div class="column is-8" markdown="1">
 **University of Liège**, founded in 1817, is one of the main universities in Wallonia, Belgium. In this project, the research was done by [the SmartGrids lab](http://blogs.ulg.ac.be/damien-ernst/), from [the Montefiore Institute](https://www.montefiore.uliege.be/). 
-The SmartGrids lab, directed by Pr Damien Ernst, is specialized in Energy System design, optimization and control and Artificial Intelligence, particularly Reinforcement Learning. 
+The SmartGrids lab, directed by Pr Damien Ernst, is specialized in energy system design, optimization and control and artificial intelligence, particularly reinforcement learning. 
   </div>
 </div>
 

@@ -6,7 +6,7 @@ show_sidebar: false
 hero_height: is-small
 hero_image: ../../img/simulations.jpg
 ---
-In this section all data of the base case and the sensitivities are accessible through a single PowerBI screen. Once a scenario is chosen, the following pages show all data in detailed screens:
+In this section all data of the Base Case and the sensitivities are accessible through a single PowerBI screen. Once a scenario is chosen, the following pages show all data in detailed screens:
 
 
 <div class="table-container" markdown="1">
