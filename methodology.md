@@ -9,7 +9,7 @@ hero_image: ../img/math13.jpg
 
 ---
 
-The complete mathematical formulation of the energy system is explained in [Jocelyn’s paper]. Here are the main principles of the methodology defined to model the complete energy system.
+The complete mathematical formulation of the energy system is explained in [Mbenoun et al., 2024](#references). Here are the main principles of the methodology defined to model the complete energy system.
 
 # Topology 
 
@@ -80,5 +80,4 @@ The [Interactive Results section](../simulations/all_simulations) provides all d
 - Bardhyl Miftari, Mathias Berger, Hatim Djelassi, and Damien Ernst , “GBOML: Graph-Based Optimization Modeling Language”, in Journal of Open Source Software, 2022, [https://orbi.uliege.be/handle/2268/289210](https://orbi.uliege.be/handle/2268/289210).
 - Bardhyl Miftari, Mathias Berger, Hatim Djelassi, and Damien Ernst , “Graph-based optimization modeling language documentation”, online documentation, 2022, [https://gboml.readthedocs.io/en/latest/](https://gboml.readthedocs.io/en/latest/).
 - Bardhyl Miftari, Mathias Berger, Guillaume Derval, Quentin Louveaux, and Damien Ernst , “GBOML: A Structure-exploiting Optimization Modelling Language in Python”, submitted and currently reviewed in Optimization Methods and Software, 2023, [https://orbi.uliege.be/handle/2268/296930](https://orbi.uliege.be/handle/2268/296930).
-
-[add reference to Jocelyn paper]
+- Jocelyn Mbenoun, Amina Benzerga, Bardhyl Miftari, Ghislain Detienne, Thierry Deschuyteneer, Juan Vazquez, Guillaume Derval, and Damien Ernst , "Integration of offshore energy into national energy system: a case study on Belgium", 2024.

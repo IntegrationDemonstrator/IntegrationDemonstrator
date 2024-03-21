@@ -83,7 +83,7 @@ Carbon storage is expressed in ktCO<sub>2</sub> or kt.
 
 All technologies, except for natural gas storage, pumped-hydro power plants, and electrical lines and natural gas pipelines in Belgium are assumed to be completely replaced by 2050. The installed capacities of technologies in neighbouring countries are considered constant throughout the optimization horizon. The electrical lines and natural gas pipelines connecting Belgium to its neighbours are assumed to be established at their current capacities, taking future projects proposed by Elia and Fluxys into account. A gas pipeline connecting Belgium to the Netherlands is repurposed for hydrogen transportation. 
 
-The relevant parameters of all technologies related to the production, transport, conversion and storage of electricity, methane and hydrogen – maximum capacity, capex, fixed opex, variable opex, conversion factors, flexibility, efficiency – are listed and referred to in [ref. to Jocelyn paper]. 
+The relevant parameters of all technologies related to the production, transport, conversion and storage of electricity, methane and hydrogen – maximum capacity, capex, fixed opex, variable opex, conversion factors, flexibility, efficiency – are listed and referred to in [Mbenoun et al., 2024](../methodology/#references). 
 
 Among other parameters, the potential for renewable production in Belgium in 2050 is defined according to [Elia’s Roadmap to 2050 study](../methodology/#notes) and [Valbiom study](../methodology/#notes):
 
@@ -95,7 +95,7 @@ Among other parameters, the potential for renewable production in Belgium in 205
 Other important parameters in the Base Case that will be modified in the sensitivity analyses are:
 
 - Offshore wind distance from shore: 40 km;
-- CO<sub>2</sub> budget for the whole energy system in 2050: 0% (net-zero energy system) of 77.6 MtCO<sub>2</sub> (CO<sub>2</sub> emissions of most of the energy system in 1990, cf. [Berger et al., 2020](../methodology/#notes));
+- CO<sub>2</sub> budget for the whole energy system in 2050: 0% (net-zero energy system) of 77.6 MtCO<sub>2</sub> (CO<sub>2</sub> emissions of most of the energy system in 1990, cf. [Berger et al., 2020](../methodology/#references));
 - Import cost of hydrogen: €75/MWh or €2.5/kg;
 - CO<sub>2</sub> export capacity : 3.5 ktCO<sub>2</sub>/h or about 30 MtCO<sub>2</sub>/year.
 

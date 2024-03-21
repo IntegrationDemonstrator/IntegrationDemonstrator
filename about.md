@@ -8,10 +8,6 @@ hero_height: is-small
 
 # INTEGRATION Project
 
-{% include notification.html message="WEBSITE UNDER CONSTRUCTION" 
-status="is-danger" 
-icon="fas fa-exclamation-triangle" %}
-
 Fluxys Belgium and ULiège have worked on the INTEGRATION project over the period 2020-2024, supported by the [Energy Transition Fund of the Belgian federal government](https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition).
 
 INTEGRATION stands for “**INT**eraction **E**lectricité, **G**az et autres **R**éseaux énergétiques : modélis**A**tion, op**T**i-misation, **I**nvestissements et régulati**ON**” in French.
