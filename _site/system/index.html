@@ -197,46 +197,27 @@
                     
                     
 <div class="content">
-    <div x-data="{visible: true}">
-    <div class="notification is-danger" x-show.transition.duration.300ms="visible">
-        
-        <article class="media">
-            
-                <div class="media-left">
-                    <span class="icon"><i class="fas fa-exclamation-triangle fa-lg"></i></span>
-                </div>
-            
-            <div class="media-content">
-                <div class="content"><p>WEBSITE UNDER CONSTRUCTION</p>
-</div>
-            </div>
-        </article>
-    </div>
-</div>
-
-<h1 id="application-of-the-methodology-to-belgiums-energy-system">Application of the methodology to Belgium’s energy system</h1>
+    <h1 id="application-of-the-methodology-to-belgiums-energy-system">Application of the methodology to Belgium’s energy system</h1>
 
 <p>Belgium’s energy system is modelled according to the methodology defined in the <a href="../methodology">Methodology section</a> with the topology and technologies illustrated in this section.</p>
 
-<p>The overall topology is shown hereunder. The three clusters – OFFSHORE, COASTAL and INLAND – are displayed, along with the three energy carriers – electricity, methane and hydrogen. The neighbouring countries are modelized as import nodes.</p>
+<p>The overall topology is shown hereunder. The three clusters – OFFSHORE, COASTAL and INLAND – are displayed, along with the three energy carriers – electricity, methane and hydrogen. The neighbouring countries are modelled as import nodes.</p>
 
 <p><img src="../img/generic.png" alt="Three clusters" /></p>
 
-<p><strong>The main elements of the methodology for Belgium’s energy system are:</strong></p>
+<p><strong>The main elements of Belgium’s energy system are:</strong></p>
 
 <ul>
-  <li><strong>Three clusters are defined</strong>: INLAND (Belgium); COASTAL (coastal area, also called “Zeebrugge” cluster); OFFSHORE (Offshore Belgian exclusive economic zone). Energy transport capacity is unlimited within the clusters, but capacity is limited by existing infrastructure or has to be built between clusters;</li>
-  <li><strong>Energy demand</strong> (final demand) for electricity, methane and hydrogen for 2050 are defined in the “Distributed Energy” scenario of the TYNDP 2022 published by <a href="../methodology/#notes">ENTSOG/ENTSO-E</a> (whole final demand except “agriculture” and “energy branch” demand). Energy demand is located in the INLAND cluster. Demand profiles are based on historical data;</li>
+  <li><strong>Three clusters</strong>: INLAND (Belgium); COASTAL (coastal area, also called “Zeebrugge” cluster); OFFSHORE (Offshore Belgian exclusive economic zone). Energy transport capacity is unlimited within clusters, but capacity is limited by existing infrastructure or has to be built between clusters;</li>
+  <li><strong>Energy demand</strong> (final demand) for electricity, methane and hydrogen (including derivatives) for 2050 are defined in the “Distributed Energy” scenario of the TYNDP 2022 published by <a href="../methodology/#notes">ENTSOG/ENTSO-E</a> (whole final demand except “agriculture” and “energy branch” demand). Energy demand is located in the INLAND cluster. Demand profiles are based on historical data for 2009;</li>
   <li><strong>Demand-side management</strong> is implemented for electricity – load shifting, load shedding;</li>
-  <li><strong>Domestic energy production capacities</strong> can be built up to the maximum potential defined in the ENTSOG-ENTSO-E’s TYNDP 2022. Solar PV and onshore wind are in the INLAND cluster, while offshore wind is in the OFFSHORE cluster;</li>
-  <li><strong>Energy can be imported</strong>: green electricity, methane and hydrogen in the COASTAL or INLAND clusters can be imported in the COASTAL or INLAND clusters from neighbouring countries where green electricity imports are assumed to follow the same production profile of renewable electricity in Belgium(because of the high correlation of wind and solar production); liquid natural gas can be imported by ship in the COASTAL cluster (Zeebrugge harbour);</li>
+  <li><strong>Domestic energy production capacities</strong> can be built up to the maximum potential defined in ENTSOG-ENTSO-E’s TYNDP 2022. Solar PV and onshore wind are in the INLAND cluster, while offshore wind is in the OFFSHORE cluster;</li>
+  <li><strong>Energy can be imported</strong>: green electricity, grey methane (natural gas) and green hydrogen can be imported in the COASTAL or INLAND clusters from neighbouring countries where green electricity imports are assumed to follow the same production profile of renewable electricity in Belgium (because of the high correlation of wind and solar production); grey or green/synthetic liquid methane can be imported by ship in the COASTAL cluster (Zeebrugge harbour);</li>
   <li><strong>Grids for electricity and methane</strong> are uncongested inside the clusters and the current capacity between clusters (if any) can be increased through investments;</li>
-  <li><strong>Conversion technologies</strong>: power-to-hydrogen (electrolysis) can be built in all clusters; hydrogen-to-power (fuel cells) can be built in the COASTAL and INLAND clusters; methane-to-power (CCGTs, OCGTs, CHPs), Methanation and SMR can be deployed in the INLAND cluster;</li>
-  <li><strong>Storage technologies</strong>: batteries for electricity and storage tanks for hydrogen can be built in all clusters, depending on physical capabilities; linepack and underground storage for methane is available in the INLAND cluster only;</li>
-  <li><strong>Carbon dioxide removal technologies</strong>: post-combustion carbon capture (PCCC) can be built close to CO<sub>2</sub> emissions in the INLAND cluster; and Direct Air Capture (DAC) can be built in the COASTAL and INLAND clusters, in order to achieve net-zero CO<sub>2</sub> emissions.</li>
+  <li><strong>Conversion technologies</strong>: power-to-hydrogen (electrolysis) can be built in all clusters; hydrogen-to-power (fuel cells) can be built in the COASTAL and INLAND clusters; methane-to-power (CCGTs, OCGTs but no CHPs), Methanation and Steam Methane Reforming (SMR) can be deployed in the INLAND cluster;</li>
+  <li><strong>Storage technologies</strong>: batteries for electricity and storage tanks for hydrogen can be built in all clusters, depending on physical capabilities; linepack and underground storage for methane is available in the INLAND cluster only and cannot be expanded;</li>
+  <li><strong>Carbon dioxide removal technologies</strong>: post-combustion carbon capture (PCCC) can be built to capture CO<sub>2</sub> emissions at the exhaust of gas-to-power and SMR facilities in the INLAND cluster; and Direct Air Capture (DAC) can be built in the COASTAL and INLAND clusters, in order to achieve net-zero CO<sub>2</sub> emissions.</li>
 </ul>
-
-<p>The overall architecture of the clusters is shown hereunder. The three clusters are displayed, along with the three energy carriers – electricity, methane and hydrogen. The neighbouring countries are modelized as import nodes. The INLAND cluster can emit, capture, and export CO<sub>2</sub>, while the COASTAL cluster can only capture and export it for permanent sequestration.</p>
 
 <h1 id="detailed-topology-of-the-clusters">Detailed topology of the clusters</h1>
 
@@ -245,7 +226,7 @@
     <img alt="Costal" src="../img/Offshore_schematic.png" width="90%" />
   </div>
   <div class="column is-8">
-    <p>A schema of the <strong>OFFSHORE</strong> cluster is shown on the left side. It considers 2 energy carriers: electricity and hydrogen. One additional commodity is defined: water. There are 7 nodes</p>
+    <p>A schema of the <strong>OFFSHORE</strong> cluster is shown on the left side. It considers 2 energy carriers: electricity and hydrogen. One additional commodity is defined: water. There are 7 nodes:</p>
 
     <ul>
       <li>4 conversion nodes: wind offshore, fuel cell, electrolyser, desalination;</li>
@@ -260,9 +241,9 @@
     <p>The <strong>COASTAL</strong> cluster is shown on the right side. It considers 3 energy carriers – electricity, hydrogen and methane. One additional commodity is defined: carbon dioxide. There are 10 nodes:</p>
 
     <ul>
-      <li>4 conversion nodes – fuel cells, electrolyser, methanation, DAC</li>
-      <li>2 flexibility nodes – electricity and hydrogen storage</li>
-      <li>4 import nodes – methane from Norway, UK and France, synthetic methane import.</li>
+      <li>4 conversion nodes: fuel cells, electrolyser, methanation, DAC</li>
+      <li>2 flexibility nodes: electricity and hydrogen storage</li>
+      <li>4 import nodes: grey methane (natural gas) from Norway, UK and France, synthetic methane import.</li>
     </ul>
   </div>
 <div class="column is-one-half has-text-centered">
@@ -275,9 +256,9 @@
 <p>There are 28 nodes:</p>
 
 <ul>
-  <li>13 conversion nodes – solar PV, wind onshore, electrolyser, fuel cell, DAC, methanation, biomethane production, CCGT, OCGT, Steam Methane Reforming, 3 PCCCs</li>
-  <li>12 flexibility nodes – electricity storage, pumped hydro, methane storage, hydrogen and CO<sub>2</sub> storage, linepack (methane), load shifting and 5 kinds of electricity load shedding</li>
-  <li>2 import nodes – methane from Germany and hydrogen from the Netherlands</li>
+  <li>13 conversion nodes: solar PV, wind onshore, electrolyser, fuel cell, DAC, methanation, biomethane production, CCGT, OCGT, SMR, 3 PCCCs;</li>
+  <li>12 flexibility nodes: electricity storage, pumped hydro, methane storage, hydrogen and CO<sub>2</sub> storage, linepack (methane), load shifting and 5 types of electricity load shedding;</li>
+  <li>2 import nodes: methane from Germany and hydrogen from the Netherlands;</li>
   <li>1 export node for CO<sub>2</sub>.</li>
 </ul>
 
@@ -287,9 +268,9 @@
 
 <h1 id="units">Units</h1>
 
-<p>Energy is expressed in MWh. For hydrogen and methane, energy is expressed in low heating value (LHV).</p>
+<p>Energy is expressed in MWh. For hydrogen and methane, energy is expressed in lower heating value (LHV).</p>
 
-<p>Power is expressed in GW. For hydrogen and methane, power (capacity, flow) is the hourly average (equivalent to GWh/h) and expressed in low heating value (LHV).</p>
+<p>Power is expressed in GW. For hydrogen and methane, power (capacity, flow) is the hourly average (equivalent to GWh/h) and expressed in lower heating value (LHV).</p>
 
 <p>Carbon capture capacity or flow rate is expressed in ktCO<sub>2</sub>/h or kt/h.</p>
 
@@ -297,30 +278,30 @@
 
 <h1 id="main-parameters">Main parameters</h1>
 
-<p>All technologies, except for natural gas storage, pumped-hydro power plants, and existing electrical lines and natural gas pipelines in Belgium would be completely replaced by 2050. The installed capacities of technologies in neighboring countries are considered constant throughout the optimization horizon. The electrical lines and natural gas pipelines connecting Belgium to its neighbours are assumed to be already established at their current capacities, taking future projects proposed by Elia and Fluxys into account. A gas pipeline connecting Belgium to the Netherlands is repurposed for hydrogen transportation.</p>
+<p>All technologies, except for natural gas storage, pumped-hydro power plants, and electrical lines and natural gas pipelines in Belgium are assumed to be completely replaced by 2050. The installed capacities of technologies in neighbouring countries are considered constant throughout the optimization horizon. The electrical lines and natural gas pipelines connecting Belgium to its neighbours are assumed to be established at their current capacities, taking future projects proposed by Elia and Fluxys into account. A gas pipeline connecting Belgium to the Netherlands is repurposed for hydrogen transportation.</p>
 
 <p>The relevant parameters of all technologies related to the production, transport, conversion and storage of electricity, methane and hydrogen – maximum capacity, capex, fixed opex, variable opex, conversion factors, flexibility, efficiency – are listed and referred to in [ref. to Jocelyn paper].</p>
 
 <p>Among other parameters, the potential for renewable production in Belgium in 2050 is defined according to <a href="../methodology/#notes">Elia’s Roadmap to 2050 study</a> and <a href="../methodology/#notes">Valbiom study</a>:</p>
 
 <ul>
-  <li>Solar PV: 50 GW</li>
-  <li>Onshore wind: 9 GW</li>
-  <li>Offshore wind: 8 GW</li>
-  <li>Biomethane: 14.1 TWh/y with flat profile</li>
+  <li>Solar PV: 50 GW;</li>
+  <li>Onshore wind: 9 GW;</li>
+  <li>Offshore wind: 8 GW;</li>
+  <li>Biomethane: 14.1 TWh/y.</li>
 </ul>
 
-<p>Other important parameters in the Base Case that will be modified in the sensitivity analysis are:</p>
+<p>Other important parameters in the Base Case that will be modified in the sensitivity analyses are:</p>
 
 <ul>
-  <li>Offshore wind distance from shore: 40 km</li>
-  <li>CO<sub>2</sub> budget for whole energy system in 2050: 0% of 1990 CO<sub>2</sub> emissions(net-zero energy system)</li>
-  <li>Import cost of hydrogen: €75/MWh</li>
-  <li>CO<sub>2</sub> export capacity : 3.5 ktCO<sub>2</sub>/h or about 30 MtCO<sub>2</sub>/year</li>
+  <li>Offshore wind distance from shore: 40 km;</li>
+  <li>CO<sub>2</sub> budget for the whole energy system in 2050: 0% (net-zero energy system) of 77.6 MtCO<sub>2</sub> (CO<sub>2</sub> emissions of most of the energy system in 1990, cf. <a href="../methodology/#notes">Berger et al., 2020</a>);</li>
+  <li>Import cost of hydrogen: €75/MWh or €2.5/kg;</li>
+  <li>CO<sub>2</sub> export capacity : 3.5 ktCO<sub>2</sub>/h or about 30 MtCO<sub>2</sub>/year.</li>
 </ul>
 
 <p>Hourly production profiles for solar PV, onshore and offshore wind use 2009 historical time series.
-Hourly consumption profiles for natural gas (heating, industry) are based on historical data from Fluxys. Hourly consumption profiles for electricity (heating, industry) are based on [???].</p>
+Hourly consumption profiles for natural gas are based on historical data from Fluxys (2018 for industry and 2009 for heating). Hourly consumption profiles for electricity (heating, industry) are defined in the <a href="../methodology/#notes">TYNDP 2022</a>.  Hourly consumption profiles for hydrogen in heating, industry and transport are assumed to be the same as for natural gas.</p>
 
 
 
@@ -340,6 +321,7 @@ Hourly consumption profiles for natural gas (heating, industry) are based on his
             <p class=""><b>INTEGRATION:</b>  Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition
                 by <a href="https://www.uliege.be/"> <br> ULiège </a> & <a href="https://www.fluxys.com/">Fluxys</a>.</p>
             <p class=""> Funded by <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition"><b>Energy Transition Fund of the Belgian federal government</b></a></p>
+            <p class=""> <b>DISCLAIMER:</b> The purpose of this website is to describe the capabilities of the tools developed by the partners of the INTEGRATION project. All study cases and related results are provided for illustrative purposes only and do not reflect the opinion of any of the partners on the energy system in 2050.</p>
         </div>
 
         

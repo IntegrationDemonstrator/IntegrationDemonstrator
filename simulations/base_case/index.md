@@ -12,11 +12,11 @@ right_link_name: Energy Balances
 
 ---
 
-Achieving carbon neutrality in 2050 is feasible, with minimal unmet demand (“Energy Not Served”). However, it requires a large amount of CH4 and H<sub>2</sub> imports. In total, 200.5 [183.8???] TWh of molecules are imported. 97.8% of hydrogen is imported because of the limited renewable electricity available for hydrogen production in Belgium. The remaining fraction of hydrogen is produced in the COASTAL cluster, converting electricity generated from offshore wind turbines and solar PV from the INLAND cluster.
+Achieving carbon neutrality in 2050 is feasible, with minimal unmet demand (“Energy Not Served”). However, it requires a large amount of CH<sub>4</sub> and H<sub>2</sub> imports. In total, 183.8 TWh of molecules are imported. 97.8% of hydrogen is imported because of the limited renewable electricity available for hydrogen production in Belgium. The remaining fraction of hydrogen is produced in the COASTAL cluster, converting electricity generated from offshore wind turbines and solar PV from the INLAND cluster.
 
 Both offshore and onshore wind energy are deployed at their maximum potential with capacity factors (after curtailment) of 22.6% and 38.2% respectively. Carbon neutrality is reached without fully exploiting the solar PV potential, due to its lower capacity factor of 11.6% (after curtailment) and the limit on the power grid capacity. The biomethane production potential is fully deployed.
 
-Direct Air Capture (DAC) is required to attain carbon neutrality. Post-Combustion Carbon Capture (PCCC) is used nearly at full capacity. The total system cost stands at €20.66 billion per year, equivalent to an average cost of €91.16/MWh.
+Direct Air Capture (DAC) is required to attain carbon neutrality. Post-Combustion Carbon Capture (PCCC) is deployed at almost all CCGTs and SMR facilities. The total system cost stands at €20.7 billion per year, equivalent to an average cost of €91.2/MWh.
 
 ![Base case summary](../../img/basecase.png)
 

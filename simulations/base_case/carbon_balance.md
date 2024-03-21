@@ -67,7 +67,7 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
 </script>
 
 
-PCCC facilities are installed at most CCGTs to capture 18.1 Mt of CO<sub>2</sub>. In addition, Direct Air Capture (DAC) capture 3.7 Mt of CO<sub>2</sub>. Biomethanation allows to compensate for 2.8 Mt of CO<sub>2</sub> emitted by the use of the 14.1 TWh of biomethane produced. Together, this represents a reduction of 24.6 Mt CO<sub>2</sub>.
+PCCC facilities are installed at most CCGT plants to capture 18.1 Mt of CO<sub>2</sub>. In addition, Direct Air Capture (DAC) capture 3.7 Mt of CO<sub>2</sub>. Biomethanation allows to compensate for 2.8 Mt of CO<sub>2</sub> thanks to the use of 14.1 TWh of biomethane. Together, this represents a reduction of 24.6 Mt of CO<sub>2</sub>.
 
 This compensates for the 20.7 Mt of CO<sub>2</sub> emissions of CCGTs and 4.0 Mt of CO<sub>2</sub> emissions of final demand for methane. Together this represents emissions of 24.60 Mt of CO<sub>2</sub>.
 

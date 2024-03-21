@@ -9,25 +9,21 @@ hero_image: ../img/math13.jpg
 
 ---
 
-{% include notification.html message="WEBSITE UNDER CONSTRUCTION" 
-status="is-danger" 
-icon="fas fa-exclamation-triangle" %}
-
 The complete mathematical formulation of the energy system is explained in [Jocelyn’s paper]. Here are the main principles of the methodology defined to model the complete energy system.
 
 # Topology 
 
-The optimization problem is described as a hierarchical hypergraph composed of nodes connected by hyperedges. Each node can be seen as an optimization sub-problem with its own sets of parameters, variables, constraints, local objectives and its own sub-hypergraph. Constraints composed of variables from different nodes can then be defined in a hyperedge to connect different nodes. 
+The optimization problem is described as a hierarchical hypergraph composed of nodes connected by hyperedges. Each node can be seen as an optimization sub-problem with its own sets of parameters, variables, constraints, local objectives and its own sub-hypergraph. Constraints composed of variables from different nodes can then be defined in hyperedges connecting different nodes. 
 
 Nodes typically represent a technology or a process. 5 generic nodes are defined to model 5 types of technologies or processes: 
 
-- **Conversion nodes**, converting a set of commodities into another set via a technology or process, taking into account conversion factors between commodities, capacity constraints, maximum deployable capacity, ramp-up and ramp-down constraints;
-- **Flexibility nodes**, maintaining equilibrium between production and demand, including storage and demand-side response mechanisms (load shedding and load shifting), taking account of round-trip efficiency, injection and withdrawal constraints, storage capacity constraints, storage level constraints (e.g. same level at beginning and end of simulation period);
+- **Conversion nodes**, converting a set of commodities into another set via a technology or process, taking into account conversion factors between commodities, capacity constraints, maximum deployable capacity, ramp-up and ramp-down constraints, e.g. CCGTs and electrolysers; 
+- **Flexibility nodes**, maintaining equilibrium between production and demand, taking account of round-trip efficiency, self-discharge rate, injection and withdrawal constraints, storage capacity constraints, storage level constraints (same level at beginning and end of simulation period), e.g. batteries, storage tanks, underground storage and demand-side response (load shedding and load shifting);
 - **Import/export nodes**, importing/exporting commodity from/to neighbouring countries, taking account of capacity constraints, maximum yearly import/export of commodity;
-- **Transmission nodes**, transporting energy via electrical lines, methane pipelines and hydrogen pipelines, taking account of capacity constraints (in forward and/or reverse flow), maximum deployable capacity; 
+- **Transmission nodes**, transporting energy via electrical lines or pipelines, taking account of capacity constraints (in forward and/or reverse flow), maximum deployable capacity; 
 - **Demand nodes**, consuming commodity according to yearly quantities defined in a 2050 demand scenario, with hourly consumption profiles; if demand cannot be supplied, a high “Energy Not Served” cost is added to the total system cost.
 
-A sixth node type, referred to as “cluster”, connects nodes and clusters producing/importing or consuming/exporting the same commodity and ensure the balance of flows for that commodity. 
+A sixth node type, referred to as “cluster”, connects nodes producing/importing or consuming/exporting the same commodity and ensure the balance of flows for that commodity. A cluster can itself connect other clusters. 
 
 Simulations are carried out on a one-year calendar period, with hourly resolution. 
 
@@ -36,7 +32,7 @@ Simulations are carried out on a one-year calendar period, with hourly resolutio
 The model is based on several key assumptions: 
 
 - **Central planning and operation.** A single entity “system operator” makes investment decisions and manages the system with the aim of minimizing the total system cost.
-- **Perfect foresight and knowledge.** The system operator has complete knowledge and foresight: he knows all technical and economic parameters as well as weather events and demand patterns.
+- **Perfect foresight and knowledge.** The system operator has complete knowledge and foresight: it knows all technical and economic parameters as well as weather events and demand patterns.
 - **Optimal investment and operational decisions.** Investment decisions are made at the start of the time horizon and assets are immediately available. Hourly time steps are used to make operational decisions. Both operational and investment decisions are resolved at the same time by the same optimization problem.
 - **Models for technologies and process.** Input-output relations express mass and energy balances in order to size and operate each technology. Efficiencies, capacity constraints and ramp-up / ramp-down constraints are simulated. Storage systems assume that the filling level is the same at the beginning and at the end of the year, and take round-trip efficiency into account.
 
@@ -46,10 +42,11 @@ In the framework of the INTEGRATION project, the **GBOML** language – **G**rap
 
 The GBOML grammar and the compiler are open-source. All information related to GBOML is available at [https://orbi.uliege.be/handle/2268/289210](https://orbi.uliege.be/handle/2268/289210). 
 
-This demonstrator uses the GBOML language to process the Belgian energy system in 2050 using ENTSOG-ENTSO-E’s scenarios by 2050. Results are presented and illustrated with graphs in the [Base Case](../simulations/base_case), [Sensitivities](../simulation) and [Interactive Results section](../simulations/all_simulations).
+This demonstrator uses the GBOML language to process the Belgian energy system in 2050 using ENTSOG-ENTSO-E’s 2022 scenarios. Results are presented and illustrated with graphs in the [Base Case](../simulations/base_case), [Sensitivities](../simulation) and [Interactive Results section](../simulations/all_simulations).
+
 # System description
 
-The methodology is applied on Belgium’s energy system in 2050. It aims at a net-zero energy system composed of electricity, methane and hydrogen (including derivates like ammonia or methanol). The topology and main parameters are described in the [System section](../system). It aims at a net-zero energy system composed of electricity, methane and hydrogen (including derivates like ammonia or methanol).
+The methodology is applied on Belgium’s energy system in 2050. It aims at a net-zero energy system composed of electricity, methane and hydrogen (including derivatives like ammonia or methanol). The topology and main parameters are described in the [System section](../system). 
 
 # Base Case, Sensitivities and Interactive Results
 
@@ -57,9 +54,9 @@ The main results of Belgium’s energy system in 2050 are presented in the [Base
 
 Some parameters of the Base Case have been modified to analyse how they influence results. The results are presented in the [Sensitivities section](../simulation) with PowerBI graphs highlighting the changes: 
 
-- **Sensitivity 1 “High Renewable”**: the potential of solar PV, onshore and offshore wind is increased in order to test how much variable RES can be integrated into the Belgian energy system;
+- **Sensitivity 1 “High Renewable”**: the potential of solar PV, onshore and offshore wind is increased in order to test how much variable Renewable Energy Sources (RES) can be integrated into the Belgian energy system;
 - **Sensitivity 2: “Farther Offshore Wind”**: the distance of offshore wind is increased to identify when it is more interesting to produce hydrogen offshore rather than transporting it as electricity, and when offshore hydrogen becomes more expensive than importing it;
-- **Sensitivity 3: “CO<sub>2</sub> Budget”**: if some CO<sub>2</sub> emissions are allowed in 2050 (within a net-zero EU energy system), the optimal energy system in Belgium is cheaper as some high-cost CO<sub>2</sub> abatement solutions are not deployed;
+- **Sensitivity 3: “CO<sub>2</sub> Budget”**: if some CO<sub>2</sub> emissions are allowed in Belgium in 2050 (within a net-zero EU energy system), the optimal energy system in Belgium is cheaper as some high-cost CO<sub>2</sub> abatement solutions are not deployed;
 - **Sensitivity 4: “H<sub>2</sub> Import Cost”**: the cost of importing hydrogen is increased to showcase the trade-off  between imports and domestic hydrogen production, possibly impacting renewable electricity deployment in Belgium;
 - **Sensitivity 5: “CO<sub>2</sub> Export Capacity”**: the capacity to export CO<sub>2</sub> by pipeline is decreased to analyse how it impacts the deployment and import of renewable electricity and the electricity system as a whole.
 

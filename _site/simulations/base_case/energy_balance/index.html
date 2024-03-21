@@ -362,7 +362,7 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
             }';style.innerHTML=keyFrames;document.getElementsByTagName('head')[0].appendChild(style);iframe.setAttribute('src',src);iframe.setAttribute('frameborder','0');iframe.setAttribute('allowFullScreen','true');setButtonState(button,'loading')}}}();
 </script>
 
-<p>Offshore wind, onshore wind and solar PV produce 73.31 TWh of electricity annually, while gas-fired combined cycles (CCGTs) produce 61.32 TWh, ensuring a low level of “Energy Not Served”. Wind and solar are intermittent and have a relatively low capacity factor (ratio between the energy effectively produced and the amount that could have been produced if an asset produced 100% of the time). In the optimum energy system, a small part of wind and solar energy is curtailed, when electricity production far exceeds demand.</p>
+<p>Offshore wind, onshore wind and solar PV produce 73.3 TWh of electricity annually (the actual production is 76.4 TWh, of which 3.1 TWh is curtailed), while gas-fired combined cycles (CCGTs) produce 61.3 TWh, ensuring a low level of “Energy Not Served”. Wind and solar are intermittent and have a relatively low capacity factor (ratio between the energy effectively produced and the amount that could have been produced if an asset produced 100% of the time). In the optimum energy system, a small part of wind and solar energy is curtailed, when electricity production far exceeds demand.</p>
 
 <div class="table-container">
 
@@ -408,21 +408,19 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
 </div>
 <p>(* After curtailment &gt; available in the energy system.)</p>
 
-<p>Despite the capacities installed, renewable technologies never produce at their maximum capacity simultaneously. The peak combined production over an hour reaches 33.0 GW: 18.83 GW for PVs, 7 GW for offshore wind turbines and 7.2 GW for onshore wind turbines, taking curtailment into account.</p>
+<p>Despite the capacities installed, renewable technologies never produce at their maximum capacity simultaneously. The peak combined production over an hour reaches 33.0 GW: 18.8 GW for PVs, 7.0 GW for offshore wind turbines and 7.2 GW for onshore wind turbines, taking curtailment into account.</p>
 
 <p>CCGT is the only carbon-emitting dispatchable technology installed in the optimal system. CCGT plants produce 61.3 TWh of electricity, resulting in a capacity factor of 58.8 %.</p>
 
-<p>PCCCs capture most of the CO<sub>2</sub> emitted by CCGTs, which requires 7.5 TWh of electricity. Subtracting this consumption from electricity produced by CCGTs, results in a net production of 53.9 TWh of electricity. PCCCs are installed at 97% of the CCGT capacity.</p>
+<p>PCCCs capture most of the CO<sub>2</sub> emitted by CCGTs, which consume 7.5 TWh of electricity. Subtracting this consumption from electricity produced by CCGTs, results in a net production of 53.9 TWh of electricity. PCCCs are installed at 97% of the CCGT capacity.</p>
 
 <p>Electricity consumption for the capture of CO<sub>2</sub> and for electrolysis reach their highest values between May and August. It follows that electricity produced by solar PVs are the main source of electricity for DAC and electrolysers and that DAC is used mainly when electricity demand is lower.</p>
 
-<p>The hydrogen demand of 77.7 TWh is mostly imported: only 1.71 TWh is produced in Belgium in the COASTAL cluster.</p>
+<p>The final hydrogen demand of 77.7 TWh is mostly imported: only 1.7 TWh is produced by electrolysers in Belgium in the COASTAL cluster. Hydrogen is not used to produce methane through methanation or electricity through fuel cells.</p>
 
 <p>The demand for methane is mostly used for power in CCGTs (102.2 TWh) and in final energy demand (19.6 TWh). The full potential of biomethane production in Belgium is installed (14.1 TWh) and the rest is imported (107.8 TWh). The existing storage capacity (8000 TWh) is only partly used to store 13 TWh over a year.</p>
 
-<p>In total, 16.7 TWh of electricity, 76.0 TWh of hydrogen and 107.8 TWh of natural gas are imported. The next table shows the amount of energy imported or exported and the peak value of the energy imported (positive values) or exported (negative values) for each import and export node and neighbour country clusters.</p>
-
-<p>[To do: check positive and negative values???]</p>
+<p>In total, 16.7 TWh of electricity, 76.0 TWh of hydrogen and 107.8 TWh of natural gas are imported. The next table shows the amount of energy imported and the peak value of the energy imported for each import node and neighbouring country.</p>
 
 <div class="table-container">
 
@@ -432,7 +430,7 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
         <th> </th>
         <th>Installed capacity</th>
         <th>Total energy</th>
-        <th>Peak power q<sup>n<sub>i</sub></sup></th>
+        <th>Peak power</th>
       </tr>
     </thead>
     <tbody>
@@ -444,81 +442,81 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
       </tr>
       <tr>
         <td>INL Elec Denmark</td>
-        <td>+2.0</td>
-        <td>+0.9</td>
-        <td>+0.4</td>
+        <td>2.0</td>
+        <td>0.9</td>
+        <td>0.4</td>
       </tr>
       <tr>
         <td>INL Elec United Kingdom</td>
-        <td>+2.4</td>
-        <td>+4.8</td>
-        <td>+2.4</td>
+        <td>2.4</td>
+        <td>4.8</td>
+        <td>2.4</td>
       </tr>
       <tr>
         <td>INL Elec Luxembourg</td>
         <td>1.0</td>
         <td>0.0</td>
-        <td>+0.0</td>
+        <td>0.0</td>
       </tr>
       <tr>
         <td>INL Elec France</td>
-        <td>+8.3</td>
-        <td>+5.5</td>
-        <td>+5.4</td>
+        <td>8.3</td>
+        <td>5.5</td>
+        <td>5.4</td>
       </tr>
       <tr>
         <td>INL Elec Netherlands</td>
-        <td>+5.4</td>
-        <td>+2.2</td>
-        <td>+1.1</td>
+        <td>5.4</td>
+        <td>2.2</td>
+        <td>1.1</td>
       </tr>
       <tr>
         <td>INL Elec Germany</td>
-        <td>+1.0</td>
-        <td>+3.4</td>
-        <td>+1.0</td>
+        <td>1.0</td>
+        <td>3.4</td>
+        <td>1.0</td>
       </tr>
       <tr>
         <td>INL H<sub>2</sub> Netherlands</td>
-        <td>+25.7</td>
-        <td>+76.0</td>
-        <td>+12.3</td>
+        <td>25.7</td>
+        <td>76.0</td>
+        <td>12.3</td>
       </tr>
       <tr>
         <td>COA CH<sub>4</sub>  Norway</td>
-        <td>+18.4</td>
-        <td>+0.0</td>
-        <td>+0.0</td>
+        <td>18.4</td>
+        <td>0.0</td>
+        <td>0.0</td>
       </tr>
       <tr>
         <td>COA CH<sub>4</sub>  United Kingdom</td>
-        <td>+24.5</td>
-        <td>+0.0</td>
-        <td>+0.0</td>
+        <td>24.5</td>
+        <td>0.0</td>
+        <td>0.0</td>
       </tr>
       <tr>
         <td>COA CH<sub>4</sub> France</td>
-        <td>+9.4</td>
-        <td>+78.8</td>
-        <td>+9.4</td>
+        <td>9.4</td>
+        <td>78.8</td>
+        <td>9.4</td>
       </tr>
       <tr>
         <td>COA CH<sub>4</sub>  North Africa</td>
-        <td>+26.8</td>
-        <td>+0.0</td>
-        <td>+0.0</td>
+        <td>26.8</td>
+        <td>0.0</td>
+        <td>0.0</td>
       </tr>
       <tr>
         <td>INL CH<sub>4</sub>  Germany</td>
-        <td>+15.1</td>
-        <td>+29.0</td>
-        <td>+15.1</td>
+        <td>15.1</td>
+        <td>29.0</td>
+        <td>15.1</td>
       </tr>
       <tr>
         <td>INL CO<sub>2</sub> Norway</td>
-        <td>-3.5</td>
-        <td>-21.8</td>
-        <td>-3.3</td>
+        <td>3.5</td>
+        <td>21.8</td>
+        <td>3.3</td>
       </tr>
     </tbody>
   </table>
@@ -568,6 +566,7 @@ function loadIframe(parent,src){var iframe=getChildByTag(parent,'iframe');var bu
             <p class=""><b>INTEGRATION:</b>  Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition
                 by <a href="https://www.uliege.be/"> <br> ULiège </a> & <a href="https://www.fluxys.com/">Fluxys</a>.</p>
             <p class=""> Funded by <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition"><b>Energy Transition Fund of the Belgian federal government</b></a></p>
+            <p class=""> <b>DISCLAIMER:</b> The purpose of this website is to describe the capabilities of the tools developed by the partners of the INTEGRATION project. All study cases and related results are provided for illustrative purposes only and do not reflect the opinion of any of the partners on the energy system in 2050.</p>
         </div>
 
         

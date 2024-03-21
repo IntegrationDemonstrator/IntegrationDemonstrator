@@ -197,28 +197,11 @@
                     
                     
 <div class="content">
-    <div x-data="{visible: true}">
-    <div class="notification is-danger" x-show.transition.duration.300ms="visible">
-        
-        <article class="media">
-            
-                <div class="media-left">
-                    <span class="icon"><i class="fas fa-exclamation-triangle fa-lg"></i></span>
-                </div>
-            
-            <div class="media-content">
-                <div class="content"><p>WEBSITE UNDER CONSTRUCTION</p>
-</div>
-            </div>
-        </article>
-    </div>
-</div>
+    <h1 id="powerbi-usage">PowerBI usage</h1>
 
-<h1 id="powerbi-usage">PowerBI usage</h1>
+<p>Each PowerBI screen shows a graph with selectors above it that allow you to drill down inside the data, and see summary results on the right side.</p>
 
-<p>Each PowerBI screen shows a graph with selectors above it that allow you to drill down inside the data, and shows summary results on the right side.</p>
-
-<p>When the mouse stays on an item of the graph, a pop-up screen shows some characteristics of that item. By clicking on a legend item, the related data is highlighted on the graph and the summary results on the right side reflect the selected legend item.</p>
+<p>When the mouse stays on an item of the graph, a pop-up screen appears with some characteristics of that item. By clicking on a legend item, the related data is highlighted on the graph and the summary results on the right side reflect the selected legend item.</p>
 
 <p>There are several selectors:</p>
 
@@ -229,7 +212,7 @@
 <p><img src="../img/scenario_nav.png" alt="scenario navigation" width="30%" height="auto" style="min-width: 300px" /></p>
 
 <ul>
-  <li><strong>Commodity</strong>: select Electricity, Hydrogen or Methane or all, depending on the graph:</li>
+  <li><strong>Commodity</strong>: select Electricity, Hydrogen (including derivatives like ammonia and methanol), Methane or CO<sub>2</sub> or all, depending on the graph; selected item(s) appear in black; no selection is equivalent to selecting “all”:</li>
 </ul>
 
 <p><img src="../img/nav_commodity.png" alt="commodity navigation" width="50%" height="auto" style="min-width: 300px" /></p>
@@ -241,48 +224,48 @@
 <p><img src="../img/nav_cluster.png" alt="cluster navigation" width="50%" height="auto" style="min-width: 300px" /></p>
 
 <ul>
-  <li><strong>Date</strong>: Zoom in the calendar year by moving the circles:</li>
+  <li><strong>Date</strong>: Zoom in the calendar year by moving the circles (default value: 1 January 2050 to 31 December 2050):</li>
 </ul>
 
 <p><img src="../img/nav_date.png" alt="cluster date" width="30%" height="auto" style="min-width: 300px" /></p>
 
 <ul>
-  <li><strong>Year/Month/Day view</strong>: the default view is shows data by Month; click on the left upper arrow to go up one level; click to the middle down arrow <img src="../img/nav_in_pb.png" alt="double arrow button" style="width: 2em; vertical-align: middle;" /> to go down one level:</li>
+  <li><strong>Year/Month/Day/Hour view</strong>: the default view is “Month”; click on the left upper arrow to go up one level; click to the middle down arrow <img src="../img/nav_in_pb.png" alt="double arrow button" style="width: 2em; vertical-align: middle;" /> to go down one level:</li>
 </ul>
 
 <p><img src="../img/nav_year.png" alt="cluster year" width="30%" height="auto" style="min-width: 300px" /></p>
 
-<p>This menu is diplayed when hoovering over the graphics.</p>
+<p>This menu is displayed when hoovering over the graphics.</p>
 
 <ul>
-  <li><strong>Full screen mode</strong>: click on the “enlarge” icon in the bottom left corner to show the PowerBI scree in full screen:</li>
+  <li><strong>Full screen mode</strong>: click on the “enlarge” icon in the bottom left corner to show the PowerBI screen in full screen:</li>
 </ul>
 
 <p><img src="../img/nav_full_screen.png" alt="Full screen icon" width="30%" height="auto" style="min-width: 300px" /></p>
 
-<p>click on <Escape> or on the “reduce” icon in the bottom line to go back to the initial size:</Escape></p>
+<p>click on <Escape> or the “reduce” icon in the bottom line to go back to the initial size:</Escape></p>
 
 <p><img src="../img/nav_close.png" alt="Close Full screen" width="30%" height="auto" style="min-width: 300px" /></p>
 
 <ul>
-  <li><strong>Selection of Analysis (Interactive Results only)</strong>: select the right analysis by scrolling through the pages in the navigation bar at the bottom:</li>
+  <li><strong>Selection of Analysis (Interactive Results only)</strong>: select the sought analysis by scrolling through the pages in the navigation bar at the bottom or by clicking left on the page number:</li>
 </ul>
 
 <p><img src="../img/nav_pages.png" alt="navigation pages" width="20%" height="auto" style="min-width: 300px" /></p>
 
-<p>In full screen mode, the analysis can also be selected using a dropdown menu:</p>
+<p>The analysis can also be selected using a dropdown menu by clicking on the page number:</p>
 
 <p><img src="../img/nav_menu.png" alt="navigation menu" width="16%" height="auto" style="min-width: 150px" /></p>
 
 <p>The following analyses are presented in the <a href="../simulations/base_case">Base Case section</a> and in the <a href="../simulations/all_simulations">Interactive Results section</a>:</p>
 
 <ul>
-  <li><strong>Energy Balances</strong>: for the chosen commodity (electricity, methane, hydrogen), the quantities above the axis enter the energy system – production, imports, conversion (in), storage (in) –, while the quantities below the axis exit the energy system – consumption, exports, conversion (out), storage (out); quantities are in TWh (Low Heating Value for methane and hydrogen);</li>
-  <li><strong>Capacities</strong>: installed capacities (existing + new) for every technology, sorted in decreasing order; quantities are in GW of output capacity, or GWh for storage capacity; [separate graph in GW and in GWh???]</li>
+  <li><strong>Energy Balances</strong>: for the chosen commodity (electricity, methane, hydrogen), the quantities above the axis enter the energy system – production, imports, conversion (in), storage (in) –, while the quantities below the axis exit the energy system – consumption, exports, conversion (out), storage (out); quantities are in GWh (Low Heating Value for methane and hydrogen);</li>
+  <li><strong>Capacities</strong>: installed capacities (existing + new) for every technology, sorted in decreasing order; quantities are in GW of production and conversion capacity, in GWh for storage capacity and kt/h for CO<sub>2</sub> capacity;</li>
   <li><strong>CO<sub>2</sub> Balance</strong>: the quantities above the axis show CO<sub>2</sub> emissions, while the quantities below the axis show CO<sub>2</sub> removals or compensations (e.g. biomethane); quantities are in ktCO<sub>2</sub>;</li>
-  <li><strong>Cost Overview</strong>: …</li>
-  <li><strong>Energy Storage</strong>: quantity of commodity over time for each storage technology; quantities are in GWh for energy commodities or kt for CO<sub>2</sub>;</li>
-  <li><strong>Marginal Costs</strong>: for each commodity and each hour, the marginal cost is calculated – this should reflect the market value; cost is in €/MWh; the CO<sub>2</sub> value in €/tCO<sub>2</sub> reflects the abatement cost of CO<sub>2</sub>.</li>
+  <li><strong>Cost Overview</strong>: the left graph shows the total system cost per commodity, in M€/year; the left graph shows de cost by technology, in M€/year, in descending order; by selecting one commodity in the left graph, the right graph zooms on the technologies for the selected commodity;</li>
+  <li><strong>Energy Storage</strong>: quantity of commodity (filling level)  over time for each storage technology; quantities are in GWh for energy commodities or kt for CO<sub>2</sub>;</li>
+  <li><strong>Marginal Costs</strong>: for each commodity and each hour, the marginal cost is calculated in €/MWh – this should reflect the market value; the CO<sub>2</sub> value in €/tCO<sub>2</sub> reflects the marginal abatement cost of CO<sub>2</sub> emissions.</li>
 </ul>
 
 
@@ -303,6 +286,7 @@
             <p class=""><b>INTEGRATION:</b>  Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition
                 by <a href="https://www.uliege.be/"> <br> ULiège </a> & <a href="https://www.fluxys.com/">Fluxys</a>.</p>
             <p class=""> Funded by <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition"><b>Energy Transition Fund of the Belgian federal government</b></a></p>
+            <p class=""> <b>DISCLAIMER:</b> The purpose of this website is to describe the capabilities of the tools developed by the partners of the INTEGRATION project. All study cases and related results are provided for illustrative purposes only and do not reflect the opinion of any of the partners on the energy system in 2050.</p>
         </div>
 
         

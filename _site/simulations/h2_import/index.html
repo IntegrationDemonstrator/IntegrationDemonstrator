@@ -296,15 +296,19 @@
                     
                     
 <div class="content">
-    <p>The production and transportation costs of hydrogen are key in the decision to use electricity or hydrogen for offshore energy transport. It is therefore important to study the behavior of factors that influence these costs. In this sensitivity analysis, we analyse the impact of the H<sub>2</sub> import price is assessed, which can help identify a threshold beyond which importation is no longer profitable compared to offshore or onshore production. The Belgian system with a higher H<sub>2</sub> import cost of €300/MWh instead of €75/MWh:</p>
+    <p>The production and transportation costs of hydrogen are key in the decision to use electricity or hydrogen for bringing offshore energy to markets. It is therefore important to study the behavior of factors that influence these costs.</p>
+
+<p>In this sensitivity analysis, we analyse the impact of the H<sub>2</sub> import price, which can help identify a threshold beyond which importation is no longer profitable compared to offshore or onshore hydrogen production.</p>
+
+<p>Here is the diagram with the deployed technologies and the commodity flows in the optimal energy system with a H<sub>2</sub> import cost of €300/MWh instead of €75/MWh:</p>
 
 <p><img src="../../img/h2import.png" alt="Base case summary" /></p>
 
-<p>In the base case, the import price of hydrogen was fixed at €75/MWh, equivalent to €2.5/kgH<sub>2</sub>. In this sensitivity analysis, we are exploring a range from €75 to €300/MWh, in order to understand how hydrogen demand is fulfilled and assess its impact on CO<sub>2</sub> emissions and electricity production.</p>
+<p>We explore a hydrogen import cost ranging from €75/MWh (Base Case) to €300/MWh, equivalent to €2.5/kg (Base Case) to €10/kg, in order to understand how hydrogen demand is fulfilled – trade-off between domestic production and imports, trade-off between electrolysis and SMRs with carbon capture – and assess its impact on CO<sub>2</sub> emissions and electricity production.</p>
 
-<p>The middle part of the next figure shows that the amount of imported hydrogen decreases as the price of importing H<sub>2</sub> increases, dwindling to a negligible amount at €300/MWh.</p>
+<p>The middle part of the next figure shows that the amount of imported hydrogen decreases as the price of importing H<sub>2</sub> increases, dwindling to a negligible amount at €300/MWh from 76.0 TWh or 98% of the hydrogen system in the Base Case.</p>
 
-<p>In the OFFSHORE cluster, raising the cost of H<sub>2</sub> imports initially boosts the production of electrolysers, as depicted in the central part of the next figure. At €106/MWh (€3.53/kgH<sub>2</sub>), electrolysis plants in the OFFSHORE cluster hit a peak capacity at 620 MW, generating 2.1 TWh of hydrogen. Consequently, the required capacity for new electricity transmission lines decreases from 4.54 GW to 3.8 GW.</p>
+<p>In the OFFSHORE cluster, raising the cost of H<sub>2</sub> imports initially boosts the production of electrolysers, as depicted in the central part of the next figure. At €108/MWh, electrolysis plants in the OFFSHORE cluster hit a peak capacity at 580 MW, producing 1.9 TWh of hydrogen. Consequently, the required capacity for electricity transmission lines between the OFFSHORE and COASTAL clusters decreases to 3.8 GW from 4.5 GW in the Base Case. Hydrogen production from offshore wind remains quite low across the range of analysed H<sub>2</sub> import costs because of the lack of renewable electricity potential with respect to electricity demand.</p>
 
 <div class="columns">
   <div class="column is-4 has-text-centered">
@@ -318,9 +322,9 @@
   </div>
 </div>
 
-<p>However, at this price, the majority of hydrogen is still produced in the COASTAL cluster, with a capacity of 2.86 GW and a production of 7.3 TWh, compared to 1.03 GW and a production of 1.6 TWh in the base case at €75/MWh. However, most of the hydrogen remains imported.</p>
+<p>However, at a price of €108/MWh, the majority of hydrogen is still produced in the COASTAL cluster, with a capacity of 2.7 GW and a production of 4.5 TWh, compared to 1.0 GW and a production of 1.6 TWh in the Base Case at €75/MWh. Most of the hydrogen remains imported.</p>
 
-<p>Beyond €106/MWh, steam methane reformers become cheaper to produce H<sub>2</sub> from CH4, but with added costs linked to capturing its CO<sub>2</sub> emissions (PCCC units, DAC needed for capturing remaining CO<sub>2</sub>), and CO<sub>2</sub> export. Hydrogen is not entirely produced by SMRs because of the limit on CO<sub>2</sub> export, as illustrated in the middle side of the next figure.</p>
+<p>Between €105 and €108/MWh, steam methane reformers become cheaper to produce H<sub>2</sub> from CH<sub>4</sub>. SMRs immediately produce a significant part of hydrogen demand: from 24.5 TWh or 32% at €108/MWh to 71.8 TWh or 92% at €300/MWh. However, additional CO<sub>2</sub> emissions from SMRs increase the costs linked to the capture of CO<sub>2</sub> emissions (PCCC on CCGTs and SMRs, DAC). As hydrogen is increasingly produced by SMRs, CCGTs are less used because of limited CO<sub>2</sub> exports due to the 3.5 kt/h constraint, and solar PV capacity and production is increased to supply the electricity system, as illustrated in the middle side of the next figure.</p>
 
 <div class="columns">
   <div class="column is-4 has-text-centered">
@@ -334,9 +338,11 @@
   </div>
 </div>
 
-<p>When the electricity price reaches €108/MWh, the CO<sub>2</sub> export limit is reached, resulting in a balance between the production of CCGT and SMRs. Between €108/MWh and €187.5/MWh, an increase in SMR production causes a decrease in electricity generated from CCGT. To compensate for the shortage, solar PV generates more electricity, while electrolysers produce slightly less. Beyond €174/MWh, it becomes profitable to import synthetic methane, enabling SMR to produce hydrogen without capturing all emitted CO<sub>2</sub>.</p>
+<p>When the H<sub>2</sub> import price reaches €108/MWh, the CO<sub>2</sub> export limit is reached, resulting in a balance between the production of CCGT and SMRs. Between €108/MWh and €187.5/MWh, an increase in SMR production causes a decrease in electricity generated from CCGTs. To compensate for the shortage, solar PV generates more electricity, while electrolysers produce slightly less. Beyond €174/MWh, it becomes profitable to import synthetic methane, enabling SMRs to produce hydrogen without capturing all emitted CO<sub>2</sub>.</p>
 
-<p>At €187.5/MWh, solar PVs reach their maximum capacity. To offset the reduced CCGT production, less hydrogen is produced from green electricity. Imports of synthetic methane further increase to produce hydrogen by SMRs. Around €300/MWh, only a negligible amount of hydrogen is imported, with the majority being produced by SMRs.</p>
+<p>At €187.5/MWh, solar PVs reach their maximum potential capacity of 50 GW, instead of 28.3 GW installed in the Base Case. The production from solar PV (after curtailment) increases to 43.1 TWh at €300/MWh instead of 28.7 TWh in the Base Case, but the load factor decreases from 11.6% to 9.9% as curtailment increases with the rising discrepancy between electricity supply and demand. To offset the reduced CCGT production, less hydrogen is produced from green electricity. Imports of synthetic methane further increase to produce hydrogen by SMRs. Around €300/MWh, only a negligible amount of hydrogen is imported, with the majority being produced by SMRs.</p>
+
+<p>These drastic changes in the energy system as the H<sub>2</sub> import cost rises from €75/MWh to €300/MWh lead to a strong increase of the total energy cost: from €20.7 billion per year at €75/MWh to €22.9 billion at €108/MWh, to €25.4 billion at €162.5/MWh, and to €27.2 billion at €300/MWh.</p>
 
 <p>All results can be visualised in the <a href="../all_simulations">Interactive Results section</a> by selecting a “H<sub>2</sub> Import Cost” scenario with the specified H<sub>2</sub> import cost.</p>
 
@@ -374,6 +380,7 @@
             <p class=""><b>INTEGRATION:</b>  Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition
                 by <a href="https://www.uliege.be/"> <br> ULiège </a> & <a href="https://www.fluxys.com/">Fluxys</a>.</p>
             <p class=""> Funded by <a href="https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition"><b>Energy Transition Fund of the Belgian federal government</b></a></p>
+            <p class=""> <b>DISCLAIMER:</b> The purpose of this website is to describe the capabilities of the tools developed by the partners of the INTEGRATION project. All study cases and related results are provided for illustrative purposes only and do not reflect the opinion of any of the partners on the energy system in 2050.</p>
         </div>
 
         
