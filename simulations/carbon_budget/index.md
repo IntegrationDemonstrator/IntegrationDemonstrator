@@ -10,7 +10,7 @@ hero_image: ../../img/dioxide_carbon.jpg
 right_link: /simulations/all_simulations
 right_link_name: Interactive Results
 ---
-The Base Case assumes a net-zero energy system by 2050. But the Belgian energy system is integrated within the European energy market and the decarbonisation cost may be different across neighbouring countries. Therefore, some countries have net-positive emissions, while other countries have net-negative emissions in an optimal carbon-neutral EU-wide energy system. In this sensitivity, we analyse how the system changes If some CO<sub>2</sub> emissions are allowed for Belgium in 2050, from 0% (Base Case) to 20% of the 1990 emissions (77.6 MtCO<sub>2</sub> , cf. [Berger et al., 2020](../../methodology#notes)).
+The Base Case assumes a net-zero energy system by 2050. But the Belgian energy system is integrated within the European energy market and the decarbonisation cost may be different across neighbouring countries. Therefore, some countries have net-positive emissions, while other countries have net-negative emissions in an optimal carbon-neutral EU-wide energy system. In this sensitivity, we analyse how the system changes If some CO<sub>2</sub> emissions are allowed for Belgium in 2050, from 0% (Base Case) to 20% of the 1990 emissions (77.6 MtCO<sub>2</sub> , cf. [Berger et al., 2020](../../methodology#references)).
 
 The allowed CO<sub>2</sub> emissions for each CO<sub>2</sub> budget parameter are:
 
