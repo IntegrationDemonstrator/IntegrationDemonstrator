@@ -8,7 +8,7 @@ description: >
   The project aims at developing a methodology to model and optimize energy systems by 2050, taking all energy networks and demand sectors into account. The methodology focuses primarily on the interaction between gas and electricity because of the increasingly important role of gas – methane, hydrogen – to ensure security of supply in Belgium. Conversion technologies like power-to-gas and gas-to-power enable energy system integration – a dynamic interaction between electricity and gas systems that enables the optimisation of the whole energy system across energy carriers through markets. 
 
 baseurl: ""
-url: "https://integrationdemonstrator.github.io/"
+url: "https://integrationdemonstrator.github.io"
 permalink: pretty
 favicon: favicon3.png
 sitelogo: favicon2.png
