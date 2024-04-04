@@ -6,6 +6,7 @@ callouts: false
 show_sidebar: false
 hero_height: is-fullwidth
 side_logo: integration.png
+image: img/generic.png
 ---
 
 # The project

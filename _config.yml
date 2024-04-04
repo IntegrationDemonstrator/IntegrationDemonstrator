@@ -1,15 +1,18 @@
 # Site Settings
 lang: en
 title: INTEGRATION
-tagline: Bulma Clean Theme
-email: your-email@domain.com
+tagline: Belgian Energy Model
+email: bmiftari@uliege.be
 description: >
-  The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
+  Fluxys Belgium and ULiège have worked on the INTEGRATION project over the period 2020-2024, supported by the Energy Transition Fund of the Belgian federal government. 
+  The project aims at developing a methodology to model and optimize energy systems by 2050, taking all energy networks and demand sectors into account. The methodology focuses primarily on the interaction between gas and electricity because of the increasingly important role of gas – methane, hydrogen – to ensure security of supply in Belgium. Conversion technologies like power-to-gas and gas-to-power enable energy system integration – a dynamic interaction between electricity and gas systems that enables the optimisation of the whole energy system across energy carriers through markets. 
+
 baseurl: ""
-url: "https://www.csrhymes.com"
+url: "https://integrationdemonstrator.github.io/"
 permalink: pretty
 favicon: favicon3.png
 sitelogo: favicon2.png
+image: img/base_summary.png
 #gh_sponsor: chrisrhymes
 #hide_share_buttons: true
 #theme_color: '#0091ff'
