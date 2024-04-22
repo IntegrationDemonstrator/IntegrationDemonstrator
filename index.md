@@ -13,7 +13,7 @@ image: img/generic.png
 
 **Fluxys Belgium** and **ULiège** have worked on the INTEGRATION project over the period 2020-2024, supported by the [Energy Transition Fund of the Belgian federal government](https://economie.fgov.be/fr/themes/energie/transition-energetique/fonds-de-transition). 
 
-**INTEGRATION** stands for **TEST** “**INT**eraction **E**lectricité, **G**az et autres **R**éseaux énergétiques : modélis**A**tion, op**T**i-misation, **I**nvestissements et régulati**ON**” (official name in French) or "Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition" (translation in English). 
+**INTEGRATION** stands for “**INT**eraction **E**lectricité, **G**az et autres **R**éseaux énergétiques : modélis**A**tion, op**T**i-misation, **I**nvestissements et régulati**ON**” (official name in French) or "Integrated energy systems around gas and electricity: modeling, optimization, investment and regulatory tools for the energy transition" (translation in English). 
 
 The project aims at developing a methodology to model and optimize energy systems by 2050, taking all energy networks and demand sectors into account. The methodology focuses primarily on the interaction between gas and electricity because of the increasingly important role of gas – methane, hydrogen – to ensure security of supply in Belgium. Conversion technologies like power-to-gas and gas-to-power enable energy system integration – a dynamic interaction between electricity and gas systems that enables the optimisation of the whole energy system across energy carriers through markets. 
 
