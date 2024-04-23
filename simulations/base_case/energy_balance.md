@@ -84,7 +84,7 @@ Despite the capacities installed, renewable technologies never produce at their 
 
 CCGT is the only carbon-emitting dispatchable technology installed in the optimal system. CCGT plants produce 61.3 TWh of electricity, resulting in a capacity factor of 58.8 %.
 
-PCCCs capture most of the CO<sub>2</sub> emitted by CCGTs, which consume 7.5 TWh of electricity. Subtracting this consumption from electricity produced by CCGTs, results in a net production of 53.9 TWh of electricity. PCCCs are installed at 97% of the CCGT capacity.
+PCCCs capture most of the CO<sub>2</sub> emitted by CCGTs, which consume 7.5 TWh of electricity. The remainder of the emitted CO<sub>2</sub> is compensated by using biomethane. Subtracting this consumption from electricity produced by CCGTs, results in a net production of 53.9 TWh of electricity. PCCCs are installed at 97% of the CCGT capacity.
 
 Electricity consumption for the capture of CO<sub>2</sub> and for electrolysis reach their highest values between May and August. It follows that electricity produced by solar PVs are the main source of electricity for DAC and electrolysers and that DAC is used mainly when electricity demand is lower.
 
@@ -115,4 +115,4 @@ In total, 16.7 TWh of electricity, 76.0 TWh of hydrogen and 107.8 TWh of natural
 
 </div>
 
-Electricity is imported from the United Kingdom, France and Germany, with 4.8, 5.6 and 3.4 TWh respectively. France and the United Kingdom are exporting nuclear power massively during winter. Germany has the most renewable technologies installed, leading to high exports of energy when production exceeds demand. Small amounts of electricity are imported from Denmark, the Netherlands and Germany.
+Electricity is imported from the United Kingdom, France and Germany, with 4.8, 5.6 and 3.4 TWh respectively. France and the United Kingdom are exporting nuclear power massively during winter, as solar production is low. Germany has the most renewable technologies installed, leading to high exports of energy when production exceeds demand. Small amounts of electricity are imported from Denmark, the Netherlands and Germany.
