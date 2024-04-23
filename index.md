@@ -23,6 +23,8 @@ This methodology has been applied on Belgium’s energy system in 2050, where el
 
 This methodology allows to calculate optimal investments in every technology of the energy system – production, transport, conversion, storage – in order to ensure security of supply, competitiveness and sustainability. 
 
+It has to be noted that any kind of model is a limited representation of the reality and helps in understanding the behaviour of complex systems. Results need therefore to be cautiously interpreted.
+
 Several scientific publications have been published in the framework of the INTEGRATION project. See the [Methodology](methodology) section for further details. This demonstration website is part of the deliverables of the INTEGRATION project. 
 
 
