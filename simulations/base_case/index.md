@@ -16,7 +16,7 @@ Based on assumptions described in the "System Description" part, and considering
 
 Both offshore and onshore wind energy are deployed at their maximum potential with capacity factors (after curtailment) of 22.6% and 38.2% respectively. Carbon neutrality is reached without fully exploiting the solar PV potential, due to its lower capacity factor of 11.6% (after curtailment) and the limit on the power grid capacity. The biomethane production potential is fully deployed.
 
-Direct Air Capture (DAC) and post-Combustion Carbon Capture (PCCC) are required to attain carbon neutrality. Post-Combustion Carbon Capture (PCCC) is deployed at almost all CCGTs and SMR facilities. The total system cost stands at €20.7 billion per year, equivalent to an average energy cost of €91.2/MWh.
+Direct Air Capture (DAC) and Post-Combustion Carbon Capture (PCCC) are required to attain carbon neutrality. Post-Combustion Carbon Capture (PCCC) is deployed at almost all CCGTs and SMR facilities. The total system cost stands at €20.7 billion per year, equivalent to an average energy cost of €91.2/MWh.
 
 ![Base case summary](../../img/basecase.png)
 
